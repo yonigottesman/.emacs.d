@@ -216,7 +216,11 @@
 ;;shortcute                                                                                     
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "<f5>") 'compile)
 
 ;;TEX
 (add-hook 'latex-mode-hook 'flyspell-mode)
 (add-hook 'latex-mode-hook (lambda () (visual-line-mode 1)))
+
+;; fast yes or no                                                                               
+(fset `yes-or-no-p `y-or-n-p) 
