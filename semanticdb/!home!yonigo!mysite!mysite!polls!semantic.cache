@@ -1,0 +1,77 @@
+;; Object polls/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "polls/"
+  :tables (list 
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.shortcuts" include nil nil [1 36])
+            ("django.http" include nil nil [37 73])
+            ("index" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [85 92]))              ) nil [75 139]))          
+    :file "views.py"
+    :pointmax 139
+    :fsize 138
+    :lastmodtime '(22226 4367 832285 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "urls.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("views" include nil nil [41 53])
+            ("urlpatterns" variable nil nil [56 116]))          
+    :file "urls.py"
+    :pointmax 117
+    :fsize 116
+    :lastmodtime '(22226 4461 583137 4000)
+    :unmatched-syntax '((FROM 34 . 38) (PERIOD 39 . 40))
+    )
+   (semanticdb-table "apps.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.apps" include nil nil [42 75])
+            ("PollsConfig" type
+               (:superclasses ("AppConfig")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [112 126]))                  
+                :type "class")
+                nil [78 127]))          
+    :file "apps.py"
+    :pointmax 127
+    :fsize 126
+    :lastmodtime '(22226 4316 54409 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__future__" include nil nil [1 40])
+            ("django.db" include nil nil [42 70])
+            ("Question" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("question_text" variable nil (reparse-symbol indented_block_body) [107 155])
+                    ("pub_date" variable nil (reparse-symbol indented_block_body) [160 209]))                  
+                :type "class")
+                nil [73 210])
+            ("Choice" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("question" variable nil (reparse-symbol indented_block_body) [244 308])
+                    ("choice_text" variable nil (reparse-symbol indented_block_body) [313 359])
+                    ("votes" variable nil (reparse-symbol indented_block_body) [364 402]))                  
+                :type "class")
+                nil [212 403]))          
+    :file "models.py"
+    :pointmax 403
+    :fsize 402
+    :lastmodtime '(22226 5011 445931 0)
+    :unmatched-syntax '(($EOI 403 . 403))
+    )
+   )
+  :file "!home!yonigo!mysite!mysite!polls!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object django/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "django/"
+  :tables (list 
+   (semanticdb-table "shortcuts.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "shortcuts.py"
+    :pointmax 7958
+    :fsize 7957
+    :lastmodtime '(22225 47161 890364 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!local!lib!python2.7!dist-packages!django!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

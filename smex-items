@@ -1,0 +1,25 @@
+
+;; ----- smex-history -----
+(
+ eval-region
+ revert-buffer
+ compile
+ visual-line-mode
+ line-number-mode
+ eval-buffer
+ package-install
+)
+
+;; ----- smex-data -----
+(
+ (eval-region . 4)
+ (jedi-mode . 2)
+ (eval-buffer . 12)
+ (grep . 4)
+ (package-install . 2)
+ (php-mode . 2)
+ (line-number-mode . 1)
+ (visual-line-mode . 1)
+ (compile . 2)
+ (revert-buffer . 1)
+)

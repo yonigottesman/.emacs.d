@@ -1,0 +1,21 @@
+;; Object mysite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysite/"
+  :tables (list 
+   (semanticdb-table "manage.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("if" code nil nil [45 250]))          
+    :file "manage.py"
+    :pointmax 250
+    :fsize 249
+    :lastmodtime '(22226 4248 464631 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!yonigo!mysite!mysite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

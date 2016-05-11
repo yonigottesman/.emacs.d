@@ -1,0 +1,32 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables (list 
+   (semanticdb-table "get-pip.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "get-pip.py"
+    :pointmax 1511868
+    :fsize 1511867
+    :lastmodtime '(22225 47092 891883 6000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yoni.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [1 11])
+            ("django" include nil nil [12 25])
+            ("print" code nil nil [26 54])
+            ("foo" function nil nil [56 84])
+            ("foo" code nil nil [85 90]))          
+    :file "yoni.py"
+    :pointmax 92
+    :fsize 91
+    :lastmodtime '(22226 3984 88508 999000)
+    :unmatched-syntax '((IMPORT 12 . 18) ($EOI 92 . 92) (INDENT_BLOCK 51 . 68) (DEF 42 . 45) (COLON 49 . 50))
+    )
+   )
+  :file "!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

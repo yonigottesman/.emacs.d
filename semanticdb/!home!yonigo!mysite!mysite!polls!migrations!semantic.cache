@@ -1,0 +1,18 @@
+;; Object migrations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "migrations/"
+  :tables (list 
+   (semanticdb-table "0001_initial.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "0001_initial.py"
+    :pointmax 1230
+    :fsize 1229
+    :lastmodtime '(22226 5342 559405 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!yonigo!mysite!mysite!polls!migrations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

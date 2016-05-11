@@ -1,0 +1,21 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables (list 
+   (semanticdb-table "linkedin_sc.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("onLinkedInAuth" function nil nil [68 535])
+            ("setProfile" function (:arguments 
+              ( ("result" variable nil (reparse-symbol FormalParameterList) [610 616]))              ) nil [590 838]))          
+    :file "linkedin_sc.js"
+    :pointmax 839
+    :fsize 838
+    :lastmodtime '(22233 47043 606521 999000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!opt!lampp!htdocs!wordpress!wp-content!plugins!linkedin-sc!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
