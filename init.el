@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-c h") 'helm-command-prefix)
 (global-unset-key (kbd "C-x c"))
 (helm-autoresize-mode t)
+(setq helm-autoresize-max-height 20)
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
@@ -37,9 +38,33 @@
       helm-recentf-fuzzy-match    t)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
+
 (when (executable-find "ack-grep")
   (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
         helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
+
+(global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
+(add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+
+
+
+(require 'helm-swoop)
+;; Change the keybinds to whatever you like :)
+(global-set-key (kbd "C-c h o") 'helm-swoop)
+(global-set-key (kbd "C-c s") 'helm-multi-swoop-all)
+;; When doing isearch, hand the word over to helm-swoop
+(define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
+;; From helm-swoop to helm-multi-swoop-all
+(define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
+;; Save buffer when helm-multi-swoop-edit complete
+(setq helm-multi-swoop-edit-save t)
+;; If this value is t, split window inside the current window
+(setq helm-swoop-split-with-multiple-windows t)
+;; Split direcion. 'split-window-vertically or 'split-window-horizontally
+(setq helm-swoop-split-direction 'split-window-vertically)
+;; If nil, you can slightly boost invoke speed in exchange for text color
+(setq helm-swoop-speed-or-color t)
+
 (helm-mode 1)
 ;;-----------------------------------------------------------------------------------------
 ;;CEDET
@@ -73,14 +98,15 @@
 (add-hook 'after-init-hook 'global-company-mode)
 ;; TODO (add-to-list 'company-backends 'company-c-headers)
 (global-set-key [(C tab)]  'company-complete)
-(with-eval-after-load 'company
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+;; (with-eval-after-load 'company 
+;;   (define-key company-active-map (kbd "M-n") nil)
+;;   (define-key company-active-map (kbd "M-p") nil)
+;;   (define-key company-active-map (kbd "C-n") #'company-select-next)
+;;   (define-key company-active-map (kbd "C-p") #'company-select-previous))
 
 ;;-----------------------------------------------------------------------------------------
 ;;stuff
+(nyan-mode 1)
 (global-linum-mode t) ;;line numbers
 (column-number-mode t) ; Shows the column number in the buffer's mode line
 (setq c-default-style "linux" c-basic-offset 4)
@@ -119,7 +145,11 @@
 ;; Enable yasnippet
 (require 'yasnippet)
 (yas-global-mode 1)
-(global-set-key (kbd "<f5>") 'compile)
+
+(global-set-key (kbd "<f5>") (lambda ()
+                               (interactive)
+                               (setq-local compilation-read-command nil)
+                               (call-interactively 'compile)))
 
 (defun revert-all-buffers ()
   "Refreshes all open buffers from their respective files"
@@ -137,6 +167,9 @@
 
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
+(setq-default indent-tabs-mode nil) ;; use space to indent by default
+(setq-default tab-width 4)
 ;;-----------------------------------------------------------------------------------------
 ;;latex
 (add-hook 'latex-mode-hook 'flyspell-mode)
@@ -154,9 +187,19 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-tooltip ((t (:background "white smoke" :foreground "black")))))
+ '(company-scrollbar-bg ((t (:background "white smoke"))))
+ '(company-scrollbar-fg ((t (:background "dim gray"))))
+ '(company-tooltip ((t (:background "dark gray" :foreground "black")))))
+
 ;;-----------------------------------------------------------------------------------------
 ;;eclim
-(require 'eclim)
-(global-eclim-mode)
-(require 'eclimd)
+;;(require 'eclim)
+;; (global-eclim-mode)
+;; (require 'eclimd)
+;;-----------------------------------------------------------------------------------------
+;;python
+(autoload 'jedi:setup "jedi" nil t)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:setup-keys t)
+(setq jedi:complete-on-dot t)
+;;-----------------------------------------------------------------------------------------
