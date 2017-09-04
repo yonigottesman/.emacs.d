@@ -6,7 +6,8 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-;;-----------------------------------------------------------------------------------------
+
+
 ;;helm
 ;; (require 'helm)
 ;; (require 'helm-config)
@@ -92,6 +93,7 @@
 ;;-----------------------------------------------------------------------------------------
 
 
+
 ;;CEDET
 
 (require 'cc-mode)
@@ -124,12 +126,11 @@
 (add-to-list 'company-backends 'company-c-headers)
 (setq company-minimum-prefix-length 2)
 (global-set-key [(C tab)]  'company-complete)
-;; (with-eval-after-load 'company 
-;;   (define-key company-active-map (kbd "M-n") nil)
-;;   (define-key company-active-map (kbd "M-p") nil)
-;;   (define-key company-active-map (kbd "C-n") #'company-select-next)
-;;   (define-key company-active-map (kbd "C-p") #'company-select-previous))
-
+(with-eval-after-load 'company 
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))
 ;;-----------------------------------------------------------------------------------------
 ;;stuff
 (nyan-mode 1)
@@ -161,12 +162,14 @@
       (global-hl-line-mode 1)
       (set-face-background 'hl-line "#3e4446")
       (set-face-foreground 'highlight nil)
+      (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
       )
   ;; else
   )
 
-;;flash instead of bell
-(setq visible-bell t )
+(setq inhibit-startup-screen t)
+;; flash instead of bell
+;; (setq visible-bell t )
 (put 'dired-find-alternate-file 'disabled nil)
 ;; Enable yasnippet
 (require 'yasnippet)
@@ -194,17 +197,29 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
+
+;;for terminal mode
 (global-set-key (kbd "ESC <up>") 'backward-paragraph)
 (global-set-key (kbd "ESC <down>") 'forward-paragraph)
+
+(global-set-key [M-up] 'backward-paragraph)
+(global-set-key [M-down] 'forward-paragraph)
 
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 (setq-default indent-tabs-mode nil) ;; use space to indent by default
 (setq-default tab-width 4)
+
+
+(global-set-key [(C-f5)] 'compile)
+(global-set-key [(f5)] 'recompile)
 ;;-----------------------------------------------------------------------------------------
 ;;latex
+
 (add-hook 'latex-mode-hook 'flyspell-mode)
+
 (add-hook 'latex-mode-hook
           (lambda () (visual-line-mode 1)))
+
 ;;-----------------------------------------------------------------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -240,16 +255,19 @@
 (setq jedi:complete-on-dot t)
 ;;-----------------------------------------------------------------------------------------
 
+
+;;-----------------------------------------------------------------------------------------
 ;;prjects
-(require 'package)
-(global-ede-mode t)
-(ede-cpp-root-project "ycdb" :file "/home/yonatang/ycdb/Makefile"
-                      :include-path '("/include"))
+
+;; (require 'package)
+;; (global-ede-mode t)
+;; (ede-cpp-root-project "ycdb" :file "/home/yonatang/ycdb/Makefile"
+;;                       :include-path '("/include"))
 
 
 ;;ECB
-(require 'ecb)
-(setq ecb-layout-name "left9")
+;; (require 'ecb)
+;; (setq ecb-layout-name "left9")
 
 
 ;;gdb
@@ -261,11 +279,18 @@
  gdb-show-main t
  )
 
- (global-hl-line-mode 1)
-(set-face-background 'hl-line "color-243")
-;; (set-face-foreground 'highlight nil)
-;; (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
-;; ;;zeburn
-; Set cursor color to white
-(load-theme 'zenburn)
-(set-cursor-color "#ffffff") 
+;;  (global-hl-line-mode 1)
+;; (set-face-background 'hl-line "color-243")
+;; ;; (set-face-foreground 'highlight nil)
+;; ;; (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
+;; ;; ;;zeburn
+;; ; Set cursor color to white
+;; (load-theme 'zenburn)
+;; (set-cursor-color "#ffffff") 
+
+;; scroll one line at a time (less "jumpy" than defaults)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+

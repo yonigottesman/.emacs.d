@@ -1,0 +1,41 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "SampleMapper.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("org.apache.hadoop.io.LongWritable" include nil nil [845 886])
+            ("org.apache.hadoop.io.Text" include nil nil [887 920])
+            ("org.apache.hadoop.mapred.JobConf" include nil nil [921 961])
+            ("org.apache.hadoop.mapred.Mapper" include nil nil [962 1001])
+            ("org.apache.hadoop.mapred.OutputCollector" include nil nil [1002 1050])
+            ("org.apache.hadoop.mapred.Reporter" include nil nil [1051 1092])
+            ("java.io.IOException" include nil nil [1094 1121]))          
+      :file "SampleMapper.java"
+      :pointmax 1511
+      :fsize 1510
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1207 . 1510) (GT 1205 . 1206) (IDENTIFIER 1201 . 1205) (COMMA 1199 . 1200) (IDENTIFIER 1187 . 1199) (COMMA 1185 . 1186) (IDENTIFIER 1181 . 1185) (COMMA 1179 . 1180) (IDENTIFIER 1167 . 1179) (PUBLIC 1123 . 1129) (LT 1166 . 1167)))
+    (semanticdb-table "SampleReducer.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("org.apache.hadoop.io.LongWritable" include nil nil [845 886])
+            ("org.apache.hadoop.io.Text" include nil nil [887 920])
+            ("org.apache.hadoop.mapred.JobConf" include nil nil [921 961])
+            ("org.apache.hadoop.mapred.OutputCollector" include nil nil [962 1010])
+            ("org.apache.hadoop.mapred.Reducer" include nil nil [1011 1051])
+            ("org.apache.hadoop.mapred.Reporter" include nil nil [1052 1093])
+            ("java.io.IOException" include nil nil [1095 1122])
+            ("java.util.Iterator" include nil nil [1123 1149]))          
+      :file "SampleReducer.java"
+      :pointmax 1612
+      :fsize 1611
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1237 . 1611) (GT 1235 . 1236) (IDENTIFIER 1231 . 1235) (COMMA 1229 . 1230) (IDENTIFIER 1217 . 1229) (COMMA 1215 . 1216) (IDENTIFIER 1211 . 1215) (COMMA 1209 . 1210) (IDENTIFIER 1197 . 1209) (PUBLIC 1151 . 1157) (LT 1196 . 1197))))
+  :file "!Users!yonatang!pachyderm!oozie-4.2.0!examples!target!examples!src!org!apache!oozie!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

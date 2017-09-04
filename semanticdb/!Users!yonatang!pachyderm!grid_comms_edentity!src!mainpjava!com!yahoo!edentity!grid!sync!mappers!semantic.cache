@@ -1,0 +1,53 @@
+;; Object mappers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mappers/"
+  :tables
+  (list
+    (semanticdb-table "FilterToContentItems.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.edentity.grid.sync.mappers" package nil nil [1 46])
+            ("cascading.flow.FlowProcess" include nil nil [48 82])
+            ("cascading.operation.BaseOperation" include nil nil [83 124])
+            ("cascading.operation.Function" include nil nil [125 161])
+            ("cascading.operation.FunctionCall" include nil nil [162 202])
+            ("cascading.tuple.Fields" include nil nil [203 233])
+            ("cascading.tuple.Tuple" include nil nil [234 263])
+            ("cascading.tuple.TupleEntry" include nil nil [264 298])
+            ("com.yahoo.edentity.common.ingestion.actionItems.ActionItem" include nil nil [299 365])
+            ("com.yahoo.edentity.grid.sync.accumulator.ErroredAction" include nil nil [366 428])
+            ("com.yahoo.edentity.grid.sync.core.EdentityMap" include nil nil [429 482])
+            ("com.yahoo.edentity.grid.sync.sinks.StoreAttachmentUrls" include nil nil [483 545])
+            ("com.yahoo.edentity.grid.sync.accumulator.Accumulator" include nil nil [546 606])
+            ("org.slf4j.Logger" include nil nil [607 631])
+            ("org.slf4j.LoggerFactory" include nil nil [632 663])
+            ("FilterToContentItems" type
+               (:typemodifiers ("public")
+                :interfaces ("Function")
+                :superclasses "BaseOperation"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [788 877])
+                    ("FilterToContentItems" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [883 955])
+                    ("operate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("flowProcess" variable (:type "FlowProcess") (reparse-symbol formal_parameters) [982 1005])
+                            ("functionCall" variable (:type "FunctionCall") (reparse-symbol formal_parameters) [1007 1032]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [961 2185]))                  
+                :type "class")
+                nil [706 2187]))          
+      :file "FilterToContentItems.java"
+      :pointmax 2187
+      :fsize 2186
+      :lastmodtime '(22580 19343 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!yonatang!pachyderm!grid_comms_edentity!src!mainpjava!com!yahoo!edentity!grid!sync!mappers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

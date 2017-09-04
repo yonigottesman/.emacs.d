@@ -1,0 +1,127 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "RedisClient.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.ycsb.db" package nil nil [850 876])
+            ("com.yahoo.ycsb.ByteIterator" include nil nil [878 913])
+            ("com.yahoo.ycsb.DB" include nil nil [914 939])
+            ("com.yahoo.ycsb.DBException" include nil nil [940 974])
+            ("com.yahoo.ycsb.Status" include nil nil [975 1004])
+            ("com.yahoo.ycsb.StringByteIterator" include nil nil [1005 1046])
+            ("redis.clients.jedis.Jedis" include nil nil [1048 1081])
+            ("redis.clients.jedis.Protocol" include nil nil [1082 1118])
+            ("java.util.HashMap" include nil nil [1120 1145])
+            ("java.util.Iterator" include nil nil [1146 1172])
+            ("java.util.List" include nil nil [1173 1195])
+            ("java.util.Properties" include nil nil [1196 1224])
+            ("java.util.Set" include nil nil [1225 1246])
+            ("java.util.Vector" include nil nil [1247 1271])
+            ("RedisClient" type
+               (:typemodifiers ("public")
+                :superclasses "DB"
+                :members 
+                  ( ("jedis" variable
+                       (:typemodifiers ("private")
+                        :type "Jedis")
+                        (reparse-symbol class_member_declaration) [1427 1447])
+                    ("HOST_PROPERTY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1451 1507])
+                    ("PORT_PROPERTY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1510 1566])
+                    ("PASSWORD_PROPERTY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1569 1633])
+                    ("INDEX_KEY" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1637 1687])
+                    ("init" function
+                       (:throws ("DBException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1691 2207])
+                    ("cleanup" function
+                       (:throws ("DBException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2211 2281])
+                    ("hash" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [2607 2617]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [2587 2651])
+                    ("read" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [2741 2753])
+                            ("key" variable (:type "String") (reparse-symbol formal_parameters) [2755 2765])
+                            ("" variable (:type "fields") (reparse-symbol formal_parameters) [2779 2785])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [2801 2807])
+                            ("" variable (:type "result") (reparse-symbol formal_parameters) [2823 2829]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [2722 3523])
+                    ("insert" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [3560 3572])
+                            ("key" variable (:type "String") (reparse-symbol formal_parameters) [3574 3584])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [3600 3606])
+                            ("" variable (:type "values") (reparse-symbol formal_parameters) [3622 3628]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [3539 3826])
+                    ("delete" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [3863 3875])
+                            ("key" variable (:type "String") (reparse-symbol formal_parameters) [3877 3887]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [3842 3996])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [4033 4045])
+                            ("key" variable (:type "String") (reparse-symbol formal_parameters) [4047 4057])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [4073 4079])
+                            ("" variable (:type "values") (reparse-symbol formal_parameters) [4095 4101]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [4012 4227])
+                    ("scan" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("table" variable (:type "String") (reparse-symbol formal_parameters) [4262 4274])
+                            ("startkey" variable (:type "String") (reparse-symbol formal_parameters) [4276 4291])
+                            ("recordcount" variable (:type "int") (reparse-symbol formal_parameters) [4293 4308])
+                            ("" variable (:type "fields") (reparse-symbol formal_parameters) [4328 4334])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [4351 4357])
+                            ("" variable (:type "result") (reparse-symbol formal_parameters) [4374 4380]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [4243 4728]))                  
+                :type "class")
+                nil [1386 4731]))          
+      :file "RedisClient.java"
+      :pointmax 4732
+      :fsize 4731
+      :lastmodtime '(22467 52211 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "package-info.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.ycsb.db" package nil nil [724 750]))          
+      :file "package-info.java"
+      :pointmax 752
+      :fsize 751
+      :lastmodtime '(22467 52211 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!yonatang!omid_project!YCSB!redis!src!main!java!com!yahoo!ycsb!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

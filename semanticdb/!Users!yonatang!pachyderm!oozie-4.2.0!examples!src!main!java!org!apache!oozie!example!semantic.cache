@@ -1,0 +1,131 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "DemoMapper.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("java.io.IOException" include nil nil [845 872])
+            ("java.util.StringTokenizer" include nil nil [873 906])
+            ("org.apache.hadoop.io.IntWritable" include nil nil [908 948])
+            ("org.apache.hadoop.io.LongWritable" include nil nil [949 990])
+            ("org.apache.hadoop.io.Text" include nil nil [991 1024])
+            ("org.apache.hadoop.mapred.MapReduceBase" include nil nil [1025 1071])
+            ("org.apache.hadoop.mapred.Mapper" include nil nil [1072 1111])
+            ("org.apache.hadoop.mapred.OutputCollector" include nil nil [1112 1160])
+            ("org.apache.hadoop.mapred.Reporter" include nil nil [1161 1202]))          
+      :file "DemoMapper.java"
+      :pointmax 2030
+      :fsize 2029
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1307 . 2029) (GT 1305 . 1306) (IDENTIFIER 1294 . 1305) (COMMA 1292 . 1293) (IDENTIFIER 1288 . 1292) (COMMA 1286 . 1287) (IDENTIFIER 1282 . 1286) (COMMA 1280 . 1281) (IDENTIFIER 1268 . 1280) (PUBLIC 1204 . 1210) (LT 1267 . 1268)))
+    (semanticdb-table "DateList.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("java.io.File" include nil nil [845 865])
+            ("java.io.FileOutputStream" include nil nil [866 898])
+            ("java.io.OutputStream" include nil nil [899 927])
+            ("java.text.DateFormat" include nil nil [928 956])
+            ("java.text.SimpleDateFormat" include nil nil [957 991])
+            ("java.util.Calendar" include nil nil [992 1018])
+            ("java.util.Date" include nil nil [1019 1041])
+            ("java.util.Properties" include nil nil [1042 1070])
+            ("java.util.TimeZone" include nil nil [1071 1097])
+            ("DateList" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("UTC" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [1124 1179])
+                    ("DATE_LIST_SEPARATOR" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1181 1229])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1256 1269]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1232 2588])
+                    ("getISO8601DateFormat" function
+                       (:typemodifiers ("private" "static")
+                        :type "DateFormat")
+                        (reparse-symbol class_member_declaration) [2610 2788])
+                    ("getTimeZone" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("tzId" variable (:type "String") (reparse-symbol formal_parameters) [2827 2838]))                          
+                        :type "TimeZone")
+                        (reparse-symbol class_member_declaration) [2791 3007])
+                    ("parseDateUTC" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [3043 3051]))                          
+                        :type "Date")
+                        (reparse-symbol class_member_declaration) [3010 3116])
+                    ("formatDateUTC" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("d" variable (:type "Date") (reparse-symbol formal_parameters) [3154 3160]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3118 3249])
+                    ("formatDateUTC" function
+                       (:throws ("Exception")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("c" variable (:type "Calendar") (reparse-symbol formal_parameters) [3288 3298]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3252 3381]))                  
+                :type "class")
+                nil [1099 3384]))          
+      :file "DateList.java"
+      :pointmax 3385
+      :fsize 3384
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SampleMapper.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("org.apache.hadoop.io.LongWritable" include nil nil [845 886])
+            ("org.apache.hadoop.io.Text" include nil nil [887 920])
+            ("org.apache.hadoop.mapred.JobConf" include nil nil [921 961])
+            ("org.apache.hadoop.mapred.Mapper" include nil nil [962 1001])
+            ("org.apache.hadoop.mapred.OutputCollector" include nil nil [1002 1050])
+            ("org.apache.hadoop.mapred.Reporter" include nil nil [1051 1092])
+            ("java.io.IOException" include nil nil [1094 1121]))          
+      :file "SampleMapper.java"
+      :pointmax 1511
+      :fsize 1510
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1207 . 1510) (GT 1205 . 1206) (IDENTIFIER 1201 . 1205) (COMMA 1199 . 1200) (IDENTIFIER 1187 . 1199) (COMMA 1185 . 1186) (IDENTIFIER 1181 . 1185) (COMMA 1179 . 1180) (IDENTIFIER 1167 . 1179) (PUBLIC 1123 . 1129) (LT 1166 . 1167)))
+    (semanticdb-table "DemoReducer.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("java.io.IOException" include nil nil [845 872])
+            ("java.util.Iterator" include nil nil [873 899])
+            ("org.apache.hadoop.io.IntWritable" include nil nil [901 941])
+            ("org.apache.hadoop.io.Text" include nil nil [942 975])
+            ("org.apache.hadoop.mapred.MapReduceBase" include nil nil [976 1022])
+            ("org.apache.hadoop.mapred.OutputCollector" include nil nil [1023 1071])
+            ("org.apache.hadoop.mapred.Reducer" include nil nil [1072 1112])
+            ("org.apache.hadoop.mapred.Reporter" include nil nil [1113 1154]))          
+      :file "DemoReducer.java"
+      :pointmax 1733
+      :fsize 1732
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1260 . 1732) (GT 1258 . 1259) (IDENTIFIER 1247 . 1258) (COMMA 1245 . 1246) (IDENTIFIER 1241 . 1245) (COMMA 1239 . 1240) (IDENTIFIER 1228 . 1239) (COMMA 1226 . 1227) (IDENTIFIER 1222 . 1226) (PUBLIC 1156 . 1162) (LT 1221 . 1222))))
+  :file "!Users!yonatang!pachyderm!oozie-4.2.0!examples!src!main!java!org!apache!oozie!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

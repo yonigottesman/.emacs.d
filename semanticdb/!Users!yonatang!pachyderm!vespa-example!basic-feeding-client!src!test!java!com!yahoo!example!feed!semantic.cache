@@ -1,0 +1,54 @@
+;; Object feed/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "feed/"
+  :tables
+  (list
+    (semanticdb-table "SampleFileFeederTest.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.example.feed" package nil nil [1 32])
+            ("com.yahoo.vespa.http.client.config.Endpoint" include nil nil [34 85])
+            ("org.junit.Test" include nil nil [86 108])
+            ("java.io.FileInputStream" include nil nil [110 141])
+            ("java.io.IOException" include nil nil [142 169])
+            ("java.util.logging.Logger" include nil nil [170 202])
+            ("SampleFileFeederTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [327 425])
+                    ("testSimpleFeeding" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [441 579])
+                    ("feed" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("hostname" variable (:type "String") (reparse-symbol formal_parameters) [603 618])
+                            ("file" variable (:type "String") (reparse-symbol formal_parameters) [619 630]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [585 1168])
+                    ("main" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1198 1211]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1174 1403]))                  
+                :type "class")
+                nil [287 1405]))          
+      :file "SampleFileFeederTest.java"
+      :pointmax 1406
+      :fsize 1405
+      :lastmodtime '(22600 7454 0 0)
+      :unmatched-syntax '((IDENTIFIER 274 . 284) (DOT 273 . 274) (IDENTIFIER 267 . 273) (DOT 266 . 267) (IDENTIFIER 261 . 266) (DOT 260 . 261) (IMPORT 243 . 249) (STATIC 250 . 256) (IDENTIFIER 257 . 260) (IDENTIFIER 239 . 241) (DOT 238 . 239) (IDENTIFIER 236 . 238) (DOT 235 . 236) (IDENTIFIER 231 . 235) (DOT 230 . 231) (IDENTIFIER 222 . 230) (DOT 221 . 222) (IMPORT 204 . 210) (STATIC 211 . 217) (IDENTIFIER 218 . 221))))
+  :file "!Users!yonatang!pachyderm!vespa-example!basic-feeding-client!src!test!java!com!yahoo!example!feed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

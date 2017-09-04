@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("matplotlib.pyplot" include nil nil [2 33])
+            ("f" variable nil nil [35 59])
+            ("lines" variable nil nil [60 81])
+            ("print" code nil nil [83 127])
+            ("hist" variable nil nil [129 136])
+            ("for" code nil nil [138 231])
+            ("print" code nil nil [232 242])
+            ("plt" code nil nil [245 298]))          
+      :file "count_event.py"
+      :pointmax 299
+      :fsize 298
+      :lastmodtime '(22783 12308 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!yonatang!pachyderm!grid_comms_edentity!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

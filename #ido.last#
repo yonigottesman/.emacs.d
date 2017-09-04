@@ -1,0 +1,326 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/yonatang/pachyderm/edentity_new/" . "grid_comms_edentity/")
+ ("/Users/yonatang/NeSC/camera_ready/" . "figs/")
+ ("/Users/yonatang/omid_project/loctx-paper/" . "figs/")
+ ("/Users/yonatang/NeSC/" . "camera_ready/")
+ ("/Users/yonatang/pachyderm/vespa-example/" . "basic-feeding-client/")
+ ("/Users/yonatang/Thesis/" . "misc/")
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/" . "examples/")
+ ("/Users/yonatang/pachyderm/" . "edentity_new/")
+ ("/Users/yonatang/omid_project/hbaseLocals/hbase/" . "bin/")
+ ("/Users/yonatang/omid_project/hbaseLocals/" . "hbase/")
+ ("/Users/yonatang/hbase/hbase-1.2.2/" . "conf/")
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.12345-SNAPSHOT/" . "conf/")
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/bin/" . "csvMetrics/")
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/" . "conf/")
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/" . "omid-benchmarks-0.8.2.12345-SNAPSHOT/")
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/" . "target/")
+ ("/Users/yonatang/omid_project/incubator-omid/" . "benchmarks/")
+ ("/Users/" . "yonatang/")
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/" . "conf/")
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/" . "tso-server/")
+ ("/Users/yonatang/omid_project/original-omid/" . "incubator-omid/")
+ ("/Users/yonatang/hbase/" . "hbase-1.2.2/")
+ ("/tmp/es/" . "snapshots/")
+ ("/tmp/" . "es/")
+ ("/Users/yonatang/elasticsearch-2.3.5/" . "config/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/apache/omid/" . "tso/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/apache/" . "omid/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/" . "apache/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/" . "org/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/" . "java/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/" . "main/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/" . "src/")
+ ("/Users/yonatang/omid_project/omid_latest/omid/" . "tso-server/")
+ ("/Users/yonatang/omid_project/omid_latest/" . "omid/")
+ ("/Users/yonatang/omid_project/" . "loctx-paper/")
+ ("/usr/local/Cellar/hbase/1.1.5_1/libexec/" . "conf/")
+ ("/usr/local/Cellar/hbase/1.1.5_1/" . "libexec/")
+ ("/usr/local/Cellar/hbase/" . "1.1.5_1/")
+ ("/" . "tmp/")
+ ("/usr/local/Cellar/hadoop/2.7.2/libexec/etc/" . "hadoop/")
+ ("/usr/local/Cellar/hadoop/2.7.2/libexec/" . "etc/")
+ ("/usr/local/Cellar/hadoop/2.7.2/" . "libexec/")
+ ("/usr/local/Cellar/hadoop/" . "2.7.2/")
+ ("/usr/local/Cellar/" . "hbase/")
+ ("/usr/local/" . "Cellar/")
+ ("/usr/" . "local/")
+ ("/Users/yonatang/" . "pachyderm/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/yonatang/pachyderm/genie_api/src/main/resources/oozie/coordbacklog/"
+ "/Users/yonatang/pachyderm/BootCampPachydermVespa/"
+ "/Users/yonatang/omid_project/omidLL-paper/"
+ "/tmp/"
+ "/Users/yonatang/NeSC/camera_ready/"
+ "/Users/yonatang/NeSC/camera_ready/figs/"
+ "/Users/yonatang/omid_project/omidLL-paper/figs/"
+ "/Users/yonatang/omid_project/loctx-paper/"
+ "/Users/yonatang/pachyderm/grid_comms_edentity/"
+ "/Users/yonatang/Thesis/"
+ "/Users/yonatang/Thesis/misc/"
+ "/Users/yonatang/Thesis/front/"
+ "/Users/yonatang/NeSC/"
+ "/Users/yonatang/Thesis/main/"
+ "/Users/yonatang/omid_project/loctx-paper/tmp/"
+ "/Users/yonatang/.emacs.d/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/resources/configdefinitions/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/test/resources/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/test/java/com/yahoo/example/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/java/com/yahoo/example/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/application/searchdefinitions/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/application/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-search/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/src/main/java/com/yahoo/example/feed/"
+ "/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/src/test/java/com/yahoo/example/feed/"
+ "/Users/yonatang/barak/"
+ "/Users/yonatang/Downloads/"
+ "/Users/yonatang/pachyderm/grid_comms_edentity/scripts/"
+ "/Users/yonatang/pachyderm/grid_comms_edentity/src/mainpjava/com/yahoo/edentity/grid/sync/mappers/"
+ "/Users/yonatang/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/main/java/org/apache/oozie/example/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/main/apps/map-reduce/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/test/java/org/apache/oozie/example/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/examples/apps/map-reduce/"
+ "/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/examples/src/org/apache/oozie/example/"
+ "/Users/yonatang/.m2/"
+ "/Users/yonatang/omid_project/hbaseLocals/hbase/bin/"
+ "/Users/yonatang/omid_project/hbaseLocals/hbase/conf/"
+ "/Users/yonatang/hbase/hbase-1.2.2/conf/"
+ "/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.12345-SNAPSHOT/conf/"
+ "/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/bin/csvMetrics/"
+ "/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/conf/"
+ "/Users/yonatang/omid_project/"
+ "/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/target/omid-tso-server-0.8.2.11-SNAPSHOT/conf/"
+ "/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/bin/"
+ "/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/conf/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "job.properties"
+ "workflow.xml"
+ "coordinator.xml"
+ "process.cfg"
+ "feed.cfg"
+ "tmpjson.json"
+ "Evaluation.tex"
+ "vdisk-eval.tex"
+ "application_benchmark.py"
+ "yoni.json"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/yonatang/pachyderm/genie_api/src/main/resources/oozie/coordbacklog/" (22747 41790 0 0) "workflow.xml~" "workflow.xml" "process.cfg" "killall.py~" "job.properties~" "job.properties" "feed.cfg~" "feed.cfg" "coordinator.xml~" "coordinator.xml" "../" "./")
+
+ ("/Users/yonatang/pachyderm/genie_api/" (22734 20988 0 0) "target/" "src/" "settings.xml" "servlet_hello_app.iml" "screwdriver.yaml" "screwdriver/" "README.md" "pom.xml" "mh.yaml" "features/" "customize" ".idea/" ".gitignore~" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/edentity_new/grid_comms_edentity/" (22719 44197 0 0) "YONIGO.dot" "userList.txt" "target/" "src/" "sleds_verticals_to_index.txt" "scripts/" "screwdriver.yaml" "sampleData/" "README.md" "pull_autotag.sh" "pom.xml" "part-v000-o000-r-00134.avro" "multilang/" "logs/" "job_table_map.bin" "grid_edentity.iml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/edentity_new/" (22710 32136 0 0) "grid_comms_edentity/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/" (22718 50529 0 0) "vespa-example/" "StatusManager/" "oozie-4.2.0.tar.gz" "oozie-4.2.0/" "localReindex/" "genie/" "edentity_new/" "cmstutorial/" "cms-test/" "ClusterManagement/" "bu/" "boson_app_comms_edentity/" "BootCampPachydermVespa/" "BootCamp/" ".idea/" ".DS_Store" "../" "./")
+
+ ("/Users/yonatang/" (22717 32761 0 0) "workspace/" "TOMAIL_424 (1).pdf" "tmpimages/" "tmp/" "Thesis/" "SickRage/" "settings.jar" "review/" "PycharmProjects/" "Public/" "Pictures/" "ParseAffective/" "pachyderm/" "oozieTarExample.tar" "oozieTarExample/" "omid_project/" "NeSC/" "Music/" "Movies/" "Library/" "hbase_scripts/" "hbase/" "hadoop/" "Google Drive/" "eclipse/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".yby-by" ".yby" ".wget-hsts" ".viminfo" ".Trash/" ".tooling/" ".tblive-4/" ".subversion/" ".ssh/" ".sh_history" ".scalaide/" ".profile~" ".profile" ".p2/" ".oracle_jre_usage/" ".nbprofiler/" ".matplotlib/" ".m2/" ".local/" ".lesshst" ".kdiff3rc" ".iterm2_shell_integration.bash" ".iterm2/" ".ipython/" ".gitconfig" ".git-completion.bash" ".emacs.d/" ".eclipse/" ".DS_Store" ".cups/" ".config/" ".cisco/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".anyconnect" ".android/" ".account" "../" "./")
+
+ ("/Users/yonatang/Desktop/" (22719 50794 0 0) "thesis_final.pdf" "Thesis Exam.pptx" "reindex_VIP.cfg" "IT Support.webloc" "Help Central.webloc" ".localized" ".DS_Store" ".#reindex_VIP.cfg" "../" "./")
+
+ ("/Users/yonatang/pachyderm/BootCampPachydermVespa/" (22701 61904 0 0) "target/" "src/" "screwdriver.yaml" "README.md" "pom.xml" "pachydermvespa.iml" "doc2.json~" "doc2.json" "doc1.json" "doc1" "doc.json~" "doc.json" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/omidLL-paper/" (22681 54268 0 0) "vldb.cls" "usenix.sty" "sigplanconf-eurosys.cls" "related.tex" "README.md" "new-api.tex" "Makefile" "main.tex" "main.tcp" "main.pdf" "main.out" "main.log" "main.blg" "main.bib" "main.bbl" "main.aux" "lorra.tex" "intro1.tex" "intro.tex" "implementation.tex" "figs/" "fast-path.tex" "Evaluation.tex" "api.tex" "algorithm.tex" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/yonatang/omid_project/omidLL-paper/figs/" (22681 53680 0 0) "throuput_latency.py" "throughputLatency5.pdf" "throughputLatency10.pdf" "throughputLatency1.pdf" "speedup.pdf" "LTX-RT.pptx" "latency_tx5.pdf" "latency_tx10.pdf" "latency_rwm.pdf" "latency_PUTGET.pdf" "latency_Put.pdf" "latency_Get.pdf" "latency_5_10.pdf" "FP-why-bump.pptx" "FP-why-bump.png" "FP-semantics.pptx" "FP-semantics.png" "../" "./")
+
+ ("/tmp/" (22681 50234 0 0) "wifi-02-07-2017__08:38:08.log" "wifi-02-06-2017__19:04:43.log" "tmpjson.json" "KSOutOfProcessFetcher.s9xuqFlURf/" "cvcd/" "com.symantec.liveupdate.pki.daemonport" "com.apple.launchd.zwwY1kkfFb/" "com.apple.launchd.vMwGU1sQnA/" "com.apple.launchd.iPiLa7NPDw/" "com.apple.launchd.a637vsiqk8/" ".keystone_install_lock" "../" "./")
+
+ ("/Users/" (22616 58727 0 0) "yonatang/" "Shared/" ".localized" "../" "./")
+
+ ("/Users/yonatang/NeSC/camera_ready/figs/" (22675 20179 0 0) "write_flow.pdf" "virtual_function.pdf" "virtio_baremetal.pdf" "virtio.py" "virtio.pdf" "virtio.eps" "translation_unit.pdf" "throutput.pdf" "throughput_block_size.pdf" "throughput.py" "SRIOV_Emulation.pdf" "root_file_system.pdf" "read_latency.py" "read_flow.pdf" "paper_figs.vsd" "NewVisio.vsdx" "nesc-overview.svg" "nesc-overview.pdf" "motivation.py" "motivation.pdf" "latency_block_size.pdf" "latency.py" "latency.pdf" "fs_affect.pdf" "extent_index.pdf" "extent_feilds.pdf" "extent.pdf" "Ext4_extents.pdf" "emulation.pdf" "direct.pdf" "design.pdf" "block_size_throughput.py" "block_size_latency_fs.py" "block_size_latency.py" "architecture.pdf" "application_benchmark_virtio.py" "application_benchmark_virtio.pdf" "application_benchmark_emulation.py" "application_benchmark_emulation.pdf" "application_benchmark.py" "application_benchmark.pdf" "../" "./")
+
+ ("/Users/yonatang/omid_project/" (22678 46397 0 0) "ycsb_scripts/" "YCSB/" "tmp/" "Seminar.pptx" "run_tso.sh~" "run_tso.sh" "run_commands.sh~" "run_commands.sh" "refactor-omid/" "original-omid/" "omidLL-paper/" "omidll-ba.tar.gz" "loctx-paper/" "localTransactions/" "incubator-omid/" "example-app/" ".idea/" ".DS_Store" "../" "./")
+
+ ("/Users/yonatang/pachyderm/new_BootCamp/BootCamp/" (22669 44303 0 0) "worker/" "target/" "setup_vm.sh" "scripts/" "screwdriver.yaml" "README.md" "psearch.iml" "pom.xml" "package.json" "libraries/" "es_shaded/" "edentity_pipeline_dev/" "edentity_pipeline/" "eclipse-organize-imports-yahoostyle.importorder" "eclipse-java-yahoo-style.xml" "daemontools/" "core/" "build/" "bootcamp.importorder" "application/" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/loctx-paper/" (22627 55844 0 0) "vldb.cls" "sigplanconf-eurosys.cls" "README.md" "new-api.tex" "Makefile" "main.tex" "main.pdf" "main.out" "main.log" "main.bib" "main.aux" "lorra.tex" "intro.tex" "implementation.tex" "figs/" "Evaluation.tex" "context.tex" "api.tex" "algorithm.tex" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/localTransactions/incubator-omid/" (22498 32002 0 0) "tso-server/" "transaction-client/" "timestamp-storage/" "statemachine/" "README.md" "pom.xml" "packaging/" "omid.iml" "NOTICE" "misc/" "metrics/" "LICENSE.txt" "KEYS" "hbase-tools/" "hbase-shims/" "hbase-coprocessor/" "hbase-common/" "hbase-commit-table/" "hbase-client/" "examples/" "doc/" "DISCLAIMER" "common/" "commit-table/" "codahale-metrics/" "bintray-settings.xml" "benchmarks/" ".travis.yml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/loctx-paper/figs/" (22619 47057 0 0) "~$results.xlsx" "write_latency.pdf" "singlewrite.pdf" "rmw_latency.pdf" "results.xlsx" "read_latency.pdf" "omdLL5.png" "omdLL10.pdf" "omdLL1.pdf" "model_tentative.pdf" "model_postcommit.pdf" "model_commit.pdf" "LTX-RT.pptx" "LTX-RT.png" "lorratx5.pdf" "lorratx1read.pdf" "lorratx10.png" "lorratx10.pdf" "LL_tx5.pdf" "LL_tx1.pdf" "../" "./")
+
+ ("/Users/yonatang/pachyderm/grid_comms_edentity/" (22615 45262 0 0) "target/" "src/" "scripts/" "screwdriver/" "sampleData/" "README.md" "pull_autotag.sh" "pom.xml" "multilang/" "Makefile" "grid_edentity.iml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/Thesis/" (22613 25777 0 0) "thesis.toc" "thesis.thm" "thesis.tex" "thesis.synctex.gz" "thesis.pdf" "thesis.out" "thesis.log" "thesis.lof" "thesis.cb2" "thesis.cb" "thesis.bbl" "thesis.aux" "README.txt" "pubinfo.aux" "missfont.log" "misc/" "makezip.sh" "makezip.bat" "Makefile" "main/" "graphics/" "front/" "figs/" "back/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/Thesis/misc/" (22613 25353 0 0) "thesis-fields.tex" "thesis-fields.aux" "texput.log" "my-thesis-specific.tex" "my-thesis-specific.aux" "my-general.tex" "my-general.aux" "iitthesis.cls" "iitthesis-extra.sty" "../" "./")
+
+ ("/Users/yonatang/Thesis/front/" (22613 21181 0 0) "pubinfo.bib" "personal-acks.tex" "personal-acks.aux" "iovirt.tex" "abstract.tex" "abstract.aux" "abbrevs.tex" "abbrevs.aux" "../" "./")
+
+ ("/usr/local/" (22597 42892 0 0) "var/" "texlive/" "share/" "sbin/" "opt/" "lib/" "jamf/" "include/" "Homebrew/" "Frameworks/" "etc/" "Cellar/" "bin/" "../" "./")
+
+ ("/usr/local/texlive/" (22590 41336 0 0) "texmf-local/" "2016/" "../" "./")
+
+ ("/usr/local/texlive/texmf-local/" (22613 25169 0 0) "web2c/" "tex/" "metapost/" "ls-R" "fonts/" "dvips/" "bibtex/" "../" "./")
+
+ ("/usr/local/texlive/texmf-local/fonts/" (22593 44884 0 0) "vf/" "type1/" "tfm/" "source/" "map/" "enc/" "afm/" "../" "./")
+
+ ("/usr/local/texlive/texmf-local/fonts/map/" (22613 25163 0 0) "hebrew/" "dvips/" "../" "./")
+
+ ("/Users/yonatang/NeSC/camera_ready/" (22613 22970 0 0) "vdisk.tex" "vdisk.out" "vdisk.bib" "vdisk-related.tex" "vdisk-motivation.tex" "vdisk-methodology.tex" "vdisk-intro.tex" "vdisk-eval.tex" "vdisk-design.tex" "vdisk-conclusions.tex" "vdisk-arch.tex" "sig-alternate.cls" "responeses.txt" "Makefile" "macros.bib" "IEEEtran.cls" "figs/" "bare_jrnl_transmag.tex" "bare_jrnl_comsoc.tex" "bare_jrnl_compsoc.tex" "bare_jrnl.tex" "bare_conf_compsoc.tex" "bare_conf.tex" "bare_adv.tex" "acks.tex" "../" "./")
+
+ ("/Users/yonatang/NeSC/" (22613 17483 0 0) "vdisk.tex" "vdisk.bib" "vdisk-related.tex" "vdisk-motivation.tex" "vdisk-methodology.tex" "vdisk-intro.tex" "vdisk-eval.tex" "vdisk-design.tex" "vdisk-conclusions.tex" "vdisk-arch.tex" "sig-alternate.cls" "rebuttal.txt" "presentations/" "outline.txt" "Makefile" "macros.bib" "figs/" "camera_ready/" ".git/" "../" "./")
+
+ ("/Users/yonatang/Thesis/main/" (22613 926 0 0) "virtualization.tex" "virtualization.aux" "related.tex" "related.aux" "prelims.tex" "prelims.aux" "pciebus.tex" "pciebus.aux" "motivation.tex" "motivation.aux" "methodology.tex" "methodology.aux" "mainchap1.tex" "mainchap1.aux" "iovirt.tex" "iovirt.aux" "iostack.tex" "iostack.aux" "intro.tex" "intro.aux" "eval.tex" "eval.aux" "design.tex" "design.aux" "conclusion.tex" "conclusion.aux" "architecture.tex" "architecture.aux" "appendix1.tex" "appendix1.aux" "../" "./")
+
+ ("/Users/yonatang/Downloads/" (22610 30448 0 0) "הוצאות נסיעה מיקרו49.pdf" "גוטסמן יונתן העברה בנקאית מהטכניון 141216.pdf" "usenix_io_devices.pdf" "thesis-draft.pdf" "subtitles.vtt" "SinkVespa.java" "SinkVespa (1).java" "present.pdf" "HW2.rar" "FAST.gtz" "FAST/" "copyLinkedList.c" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/yonatang/.emacs.d/" (22608 65322 0 0) "themes/" "snippets/" "smex-items" "semanticdb/" "recentf~" "recentf" "README.md" "init.el" "ido.last~" "ido.last" "elpa/" "auto-save-list/" "ac-comphist.dat" ".python-environments/" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/loctx-paper/tmp/" (22607 3648 0 0) "Makefile~" "Makefile" "lorra.tex" "lorra.log" "lorra.bib" ".#Makefile" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/src/test/java/com/yahoo/example/feed/" (22605 27578 0 0) "SampleStreamFeederTest.java" "SampleFileFeederTest.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/src/main/java/com/yahoo/example/feed/" (22601 21122 0 0) "SampleStreamFeeder.java" "SampleFileFeeder.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-feeding-client/" (22605 25536 0 0) "target/" "src/" "screwdriver.yaml" "README.md" "pom.xml" "basic-application.iml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/" (22605 25417 0 0) "target/" "src/" "screwdriver.yaml" "README.md" "pom.xml" "music-data-3.json~" "music-data-3.json" "music-data-2.json" "music-data-1.json" "basic-application.iml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/test/resources/" (22569 27868 0 0) "systemtest-feed.json" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/test/java/com/yahoo/example/" (22569 27868 0 0) "ExampleUnitTest.java" "ExampleSystemTest.java" "ExampleStagingTest.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/resources/configdefinitions/" (22569 27868 0 0) "message.def" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/java/com/yahoo/example/" (22569 27868 0 0) "ExampleSearcher.java" "ExampleDocumentProcessor.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/application/searchdefinitions/" (22569 27868 0 0) "music.sd" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/basic-search/src/main/application/" (22569 27868 0 0) "services.xml" "searchdefinitions/" "deployment.xml" "../" "./")
+
+ ("/Users/yonatang/pachyderm/vespa-example/" (22600 7447 0 0) "basic-search/" "basic-feeding-client/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/BootCamp/" (22591 60016 0 0) "worker/" "setup_vm.sh" "scripts/" "screwdriver.yaml" "README.md" "psearch.iml" "pom.xml" "package.json" "libraries/" "es_shaded/" "edentity_pipeline_dev/" "edentity_pipeline/" "eclipse-organize-imports-yahoostyle.importorder" "eclipse-java-yahoo-style.xml" "daemontools/" "core/" "build/" "bootcamp.importorder" "application/" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/.m2/" (22553 55609 0 0) "settings.xml_bu" "settings.xml" "setting.xml~" "repository/" ".DS_Store" "../" "./")
+
+ ("/Users/yonatang/pachyderm/grid_comms_edentity/src/mainpjava/com/yahoo/edentity/grid/sync/mappers/" (22580 19914 0 0) "FilterToContentItems.java" "../" "./")
+
+ ("/Users/yonatang/barak/" (22587 15161 0 0) "run.dSYM/" "run" "pokemon_test.c~" "pokemon_test.c" "pokemon_out" "pokemon_err" "pokemon.h" "main_pokemon.c" "aux_macros.h" "a.out.dSYM/" "a.out" "../" "./")
+
+ ("/Users/yonatang/pachyderm/grid_comms_edentity/src/main/java/com/yahoo/edentity/grid/sync/" (22580 20570 0 0) "sources/" "sinks/" "report/" "mappers/" "grouper/" "GridReducedSyncMapDirectory.java" "GridReducedSyncDirectoryFactory.java" "GridReducedSyncDirectory.java" "GridPipeline.java" "buffers/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/grid_comms_edentity/scripts/" (22580 19914 0 0) "refresh_certificates.sh" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/main/apps/demo/" (21855 4694 0 0) "workflow.xml" "job.windows.properties" "job.properties" "id.pig" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/main/apps/map-reduce/" (21855 4694 0 0) "workflow.xml" "workflow-with-config-class.xml" "job.properties" "job-with-config-class.properties" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/test/java/org/apache/oozie/example/" (21855 4694 0 0) "TestLocalOozieExample.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/" (22571 7589 0 0) "zookeeper-security-tests/" "workflowgenerator/" "work.log" "webapp/" "utils/" "tools/" "target/" "src/" "source-headers.txt" "sharelib/" "release-log.txt" "README.txt" "pom.xml" "NOTICE.txt" "minitest/" "login/" "LICENSE.txt" "hadooplibs/" "examples/" "docs/" "distro/" "DISCLAIMER.txt" "core/" "client/" "builds/" "bin/" ".gitignore" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/" (22571 7398 0 0) "test-data/" "test-classes/" "surefire-reports/" "oozie-examples-4.2.0.jar" "oozie-examples-4.2.0-examples.tar.gz" "oozie-examples-4.2.0-examples/" "maven-shared-archive-resources/" "maven-archiver/" "generated-sources/" "classes/" "archive-tmp/" ".plxarc" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/" (22571 7383 0 0) "target/" "src/" "pom.xml" "build/" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/src/main/java/org/apache/oozie/example/" (21855 4694 0 0) "TimeUnit.java" "SparkFileCopy.java" "SampleReducer.java" "SampleOozieActionConfigurator.java" "SampleMapper.java" "Repeatable.java" "LocalOozieExample.java" "DemoReducer.java" "DemoPigMain.java" "DemoMapReduceMain.java" "DemoMapper.java" "DemoJavaMain.java" "DateList.java" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/examples/apps/map-reduce/" (21855 4694 0 0) "workflow.xml" "workflow-with-config-class.xml" "lib/" "job.properties" "job-with-config-class.properties" "../" "./")
+
+ ("/Users/yonatang/pachyderm/oozie-4.2.0/examples/target/examples/src/org/apache/oozie/example/" (21855 4694 0 0) "TimeUnit.java" "SparkFileCopy.java" "SampleReducer.java" "SampleOozieActionConfigurator.java" "SampleMapper.java" "Repeatable.java" "LocalOozieExample.java" "DemoReducer.java" "DemoPigMain.java" "DemoMapReduceMain.java" "DemoMapper.java" "DemoJavaMain.java" "DateList.java" "../" "./")
+
+ ("/Users/yonatang/eclipse/java-neon/Eclipse.app/Contents/Eclipse/" (22467 55825 0 0) "readme/" "plugins/" "eclipse.ini~" "eclipse.ini.backup" "eclipse.ini" "dropins/" "configuration/" ".eclipseproduct" "#eclipse.ini.backup#" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/conf/" (22498 27542 0 0) "omid-server-configuration.yml" "log4j.xml" "hbase-site.xml" "../" "./")
+
+ ("/Users/yonatang/omid_project/hbaseLocals/hbase/bin/" (22498 22658 0 0) "zookeepers.sh" "thread-pool.rb" "test/" "stop-hbase.sh" "stop-hbase.cmd" "start-hbase.sh" "start-hbase.cmd" "shutdown_regionserver.rb" "rolling-restart.sh" "replication/" "regionservers.sh" "region_status.rb" "region_mover.rb" "master-backup.sh" "local-regionservers.sh" "local-master-backup.sh" "hirb.rb" "hbase.cmd" "hbase-jruby" "hbase-daemons.sh" "hbase-daemon.sh" "hbase-config.sh" "hbase-config.cmd" "hbase-common.sh" "hbase-cleanup.sh" "hbase" "graceful_stop.sh" "get-active-master.rb" "../" "./")
+
+ ("/Users/yonatang/omid_project/hbaseLocals/hbase/conf/" (22499 34157 0 0) "regionservers" "log4j.properties" "hbase-site.xml" "hbase-policy.xml" "hbase-env.sh" "hbase-env.cmd" "hadoop-metrics2-hbase.properties" "../" "./")
+
+ ("/Users/yonatang/omid_project/hbaseLocals/hbase/" (22499 28515 0 0) "target/" "src/" "README.txt" "pom.xml" "NOTICE.txt" "LICENSE.txt" "hbase.iml" "hbase-thrift/" "hbase-testing-util/" "hbase-shell/" "hbase-server/" "hbase-rest/" "hbase-resource-bundle/" "hbase-protocol/" "hbase-prefix-tree/" "hbase-it/" "hbase-hadoop2-compat/" "hbase-hadoop1-compat/" "hbase-hadoop-compat/" "hbase-examples/" "hbase-common/" "hbase-client/" "hbase-checkstyle/" "hbase-assembly/" "hbase-annotations/" "dev-support/" "conf/" "CHANGES.txt" "bin/" ".idea/" ".gitignore" ".gitattributes" ".git/" ".arcconfig" "../" "./")
+
+ ("/Users/yonatang/omid_project/hbaseLocals/" (22498 21707 0 0) "hbase/" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.12345-SNAPSHOT/" (22498 18715 0 0) "omid-benchmarks.jar" "lib/" "conf/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.12345-SNAPSHOT/conf/" (22498 17648 0 0) "tso-server-benchmark-config.yml~" "tso-server-benchmark-config.yml" "log4j.xml" "hbase-site.xml" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/" (22490 20135 0 0) "target/" "src/" "pom.xml" "omid-benchmarks.iml" "maven/" "conf/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/" (22498 16990 0 0) "omid-benchmarks-0.8.2.12345-SNAPSHOT.jar" "omid-benchmarks-0.8.2.12345-SNAPSHOT-bin.tar.gz" "omid-benchmarks-0.8.2.12345-SNAPSHOT/" "maven-status/" "maven-archiver/" "generated-sources/" "classes/" "archive-tmp/" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/bin/csvMetrics/" (22480 15 0 0) "tx_runner.4.bottomusual-lm.timestamp.csv" "tx_runner.4.bottomusual-lm.errors.csv" "tx_runner.4.bottomusual-lm.commit.csv" "tx_runner.4.bottomusual-lm.abort.csv" "tx_runner.3.bottomusual-lm.timestamp.csv" "tx_runner.3.bottomusual-lm.errors.csv" "tx_runner.3.bottomusual-lm.commit.csv" "tx_runner.3.bottomusual-lm.abort.csv" "tx_runner.2.bottomusual-lm.timestamp.csv" "tx_runner.2.bottomusual-lm.errors.csv" "tx_runner.2.bottomusual-lm.commit.csv" "tx_runner.2.bottomusual-lm.abort.csv" "tx_runner.1.bottomusual-lm.timestamp.csv" "tx_runner.1.bottomusual-lm.errors.csv" "tx_runner.1.bottomusual-lm.commit.csv" "tx_runner.1.bottomusual-lm.abort.csv" "tx_runner.0.bottomusual-lm.timestamp.csv" "tx_runner.0.bottomusual-lm.errors.csv" "tx_runner.0.bottomusual-lm.commit.csv" "tx_runner.0.bottomusual-lm.abort.csv" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/conf/" (22479 65532 0 0) "tso-server-benchmark-config.yml~" "tso-server-benchmark-config.yml" "log4j.xml" "hbase-site.xml" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/bin/" (22479 64610 0 0) "omid-env.sh" "csvMetrics/" "benchmarks.sh" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/benchmarks/target/omid-benchmarks-0.8.2.11-SNAPSHOT/" (22479 64513 0 0) "omid-benchmarks.jar" "lib/" "conf/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/incubator-omid/" (22478 41708 0 0) "tso-server/" "transaction-client/" "timestamp-storage/" "statemachine/" "README.md" "pom.xml" "packaging/" "omid.iml" "NOTICE" "misc/" "metrics/" "LICENSE.txt" "KEYS" "hbase-tools/" "hbase-shims/" "hbase-coprocessor/" "hbase-common/" "hbase-commit-table/" "hbase-client/" "examples/" "doc/" "DISCLAIMER" "common/" "commit-table/" "codahale-metrics/" "bintray-settings.xml" "benchmarks/" ".travis.yml" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/" (22479 63103 0 0) "target/" "src/" "pom.xml" "maven/" "lib/" "conf/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/target/" (22479 63120 0 0) "test-classes/" "omid-tso-server-0.8.2.11-SNAPSHOT.jar" "omid-tso-server-0.8.2.11-SNAPSHOT-tests.jar" "omid-tso-server-0.8.2.11-SNAPSHOT-bin.tar.gz" "omid-tso-server-0.8.2.11-SNAPSHOT/" "maven-status/" "maven-archiver/" "generated-test-sources/" "generated-sources/" "classes/" "archive-tmp/" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/target/omid-tso-server-0.8.2.11-SNAPSHOT/" (22479 63120 0 0) "omid-tso-server-0.8.2.11-SNAPSHOT.jar" "lib/" "conf/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/target/omid-tso-server-0.8.2.11-SNAPSHOT/conf/" (22479 63085 0 0) "omid-server-configuration.yml" "log4j.xml" "hbase-site.xml" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/tso-server/bin/" (22475 59090 0 0) "omid.sh" "omid-env.sh" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/incubator-omid/" (22478 42078 0 0) "tso-server/" "transaction-client/" "timestamp-storage/" "statemachine/" "README.md" "pom.xml" "packaging/" "NOTICE" "misc/" "metrics/" "LICENSE.txt" "KEYS" "hbase-tools/" "hbase-shims/" "hbase-coprocessor/" "hbase-common/" "hbase-commit-table/" "hbase-client/" "examples/" "doc/" "DISCLAIMER" "common/" "commit-table/" "codahale-metrics/" "bintray-settings.xml" "benchmarks/" ".travis.yml" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/yonatang/omid_project/original-omid/" (22477 2445 0 0) "run_tso.sh~" "run_tso.sh" "incubator-omid/" "../" "./")
+
+ ("/Users/yonatang/hbase/hbase-1.2.2/conf/" (22453 23167 0 0) "regionservers" "log4j.properties" "hbase-site.xml~" "hbase-site.xml" "hbase-policy.xml" "hbase-env.sh~" "hbase-env.sh" "hbase-env.cmd" "hadoop-metrics2-hbase.properties" "../" "./")
+
+ ("/Users/yonatang/hbase/hbase-1.2.2/" (22442 58265 0 0) "README.txt" "NOTICE.txt" "logs/" "LICENSE.txt" "lib/" "LEGAL" "hbase-webapps/" "docs/" "conf/" "CHANGES.txt" "bin/" "../" "./")
+
+ ("/Users/yonatang/hbase/" (22444 31632 0 0) "zookeeper/" "hbase-1.2.2-bin.tar.gz" "hbase-1.2.2/" "../" "./")
+
+ ("/Users/yonatang/file:/" (22452 2805 0 0) "Users/" "../" "./")
+
+ ("/Users/yonatang/file:/Users/" (22452 2805 0 0) "yonatang/" "../" "./")
+
+ ("/Users/yonatang/hadoop/hadoop-2.7.2/etc/hadoop/" (22444 35254 0 0) "yarn-site.xml" "yarn-env.sh" "yarn-env.cmd" "ssl-server.xml.example" "ssl-client.xml.example" "slaves" "mapred-site.xml~" "mapred-site.xml.template" "mapred-site.xml" "mapred-queues.xml.template" "mapred-env.sh" "mapred-env.cmd" "log4j.properties" "kms-site.xml" "kms-log4j.properties" "kms-env.sh" "kms-acls.xml" "httpfs-site.xml" "httpfs-signature.secret" "httpfs-log4j.properties" "httpfs-env.sh" "hdfs-site.xml~" "hdfs-site.xml" "hadoop-policy.xml" "hadoop-metrics2.properties" "hadoop-metrics.properties" "hadoop-env.sh" "hadoop-env.cmd" "core-site.xml~" "core-site.xml" "container-executor.cfg" "configuration.xsl" "capacity-scheduler.xml" "#mapred-site.xml#" "../" "./")
+
+ ("/Users/yonatang/elasticsearch-2.3.5/config/" (22441 46916 0 0) "scripts/" "logging.yml" "elasticsearch.yml~" "elasticsearch.yml" "../" "./")
+
+ ("/tmp/es/snapshots/" (22441 36045 0 0) "YONI/" "bu/" "../" "./")
+
+ ("/tmp/es/" (22441 31649 0 0) "snapshots/" "logs/" "data/" "../" "./")
+
+ ("/tmp/com.apple.launchd.VdWFcwbzVo/" (22440 38301 0 0) "Listeners" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/conf/" (22435 1337 0 0) "omid-server-configuration.yml" "log4j.xml" "hbase-site.xml" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/bin/" (22435 1337 0 0) "omid.sh" "omid-env.sh" "../" "./")
+
+ ("/Users/yonatang/.ssh/" (22439 5204 0 0) "known_hosts" "id_rsa.pub" "id_rsa" "id_dsa.pub" "id_dsa" "config~" "config" "authorized_keys~" "authorized_keys" "../" "./")
+
+ ("/Users/yonatang/elasticsearch-2.3.5/" (22441 30797 0 0) "README.textile" "plugins/" "NOTICE.txt" "modules/" "logs/" "LICENSE.txt" "lib/" "data/" "config/" "bin/" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/apache/omid/tso/" (22435 1337 0 0) "VoidLeaseManager.java" "VoidLeaseManagementModule.java" "TSOStateManagerImpl.java" "TSOStateManager.java" "TsoServerDaemon.java" "TSOServerConfig.java" "TSOServer.java" "TSOModule.java" "TSOChannelHandler.java" "TimestampOracleImpl.java" "TimestampOracle.java" "SystemExitPanicker.java" "RuntimeExceptionPanicker.java" "RetryProcessorImpl.java" "RetryProcessor.java" "RequestProcessorImpl.java" "RequestProcessor.java" "ReplyProcessorImpl.java" "ReplyProcessor.java" "PersistEvent.java" "PersistenceProcessorImpl.java" "PersistenceProcessorHandler.java" "PersistenceProcessor.java" "Panicker.java" "NetworkInterfaceUtils.java" "MonitoringContext.java" "MockPanicker.java" "LongCache.java" "LeaseManager.java" "LeaseManagement.java" "InMemoryTimestampStorageModule.java" "InMemoryCommitTableStorageModule.java" "HALeaseManagementModule.java" "FatalExceptionHandler.java" "DisruptorModule.java" "CommitHashMap.java" "CacheEvaluation.java" "BatchPoolModule.java" "Batch.java" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/apache/omid/" (22435 1337 0 0) "tso/" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/apache/" (22435 1337 0 0) "omid/" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/org/" (22435 1337 0 0) "apache/" "../" "./")
+
+ ("/Users/yonatang/omid_project/omid_latest/omid/tso-server/src/main/java/" (22435 1337 0 0) "org/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

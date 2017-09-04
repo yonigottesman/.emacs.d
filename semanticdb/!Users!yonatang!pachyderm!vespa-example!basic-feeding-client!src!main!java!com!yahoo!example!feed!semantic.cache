@@ -1,0 +1,189 @@
+;; Object feed/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "feed/"
+  :tables
+  (list
+    (semanticdb-table "SampleFileFeeder.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.example.feed" package nil nil [1 32])
+            ("com.yahoo.vespa.http.client.FeedClient" include nil nil [34 80])
+            ("com.yahoo.vespa.http.client.FeedClientFactory" include nil nil [81 134])
+            ("com.yahoo.vespa.http.client.Result" include nil nil [135 177])
+            ("com.yahoo.vespa.http.client.config.*" include nil nil [178 222])
+            ("java.io.InputStream" include nil nil [224 251])
+            ("java.util.concurrent.atomic.AtomicInteger" include nil nil [252 301])
+            ("java.util.logging.Logger" include nil nil [302 334])
+            ("SampleFileFeeder" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("YCA_HTTP_HEADER_NAME" variable
+                       (:typemodifiers ("public" "final" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [496 563])
+                    ("endpoint" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Endpoint")
+                        (reparse-symbol class_member_declaration) [569 601])
+                    ("sessionParams" variable
+                       (:typemodifiers ("private" "final")
+                        :type "SessionParams")
+                        (reparse-symbol class_member_declaration) [606 648])
+                    ("log" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [653 747])
+                    ("ResultCallBack" type
+                       (:typemodifiers ("static")
+                        :interfaces ("FeedClient.ResultCallback")
+                        :members 
+                          ( ("resultsReceived" variable
+                               (:typemodifiers ("final")
+                                :type "AtomicInteger")
+                                (reparse-symbol class_member_declaration) [942 1001])
+                            ("errorsReceived" variable
+                               (:typemodifiers ("final")
+                                :type "AtomicInteger")
+                                (reparse-symbol class_member_declaration) [1010 1068])
+                            ("startTimeMillis" variable
+                               (:typemodifiers ("final")
+                                :type "long")
+                                (reparse-symbol class_member_declaration) [1077 1133])
+                            ("onCompletion" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("docId" variable (:type "String") (reparse-symbol formal_parameters) [1187 1199])
+                                    ("documentResult" variable (:type "Result") (reparse-symbol formal_parameters) [1201 1222]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [1162 1488])
+                            ("dumpStatsToLog" function (:type "void") (reparse-symbol class_member_declaration) [1498 1750]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [866 1756])
+                    ("SampleFileFeeder" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("endpoint" variable (:type "Endpoint") (reparse-symbol formal_parameters) [1978 1995])
+                            ("dryRun" variable (:type "boolean") (reparse-symbol formal_parameters) [1997 2011]))                          )
+                        (reparse-symbol class_member_declaration) [1954 2065])
+                    ("SampleFileFeeder" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("endpoint" variable (:type "Endpoint") (reparse-symbol formal_parameters) [2464 2481])
+                            ("ycaCertificate" variable (:type "String") (reparse-symbol formal_parameters) [2483 2504])
+                            ("useCompression" variable (:type "boolean") (reparse-symbol formal_parameters) [2506 2528])
+                            ("dryRun" variable (:type "boolean") (reparse-symbol formal_parameters) [2530 2544]))                          )
+                        (reparse-symbol class_member_declaration) [2440 3006])
+                    ("configure" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("certificate" variable (:type "String") (reparse-symbol formal_parameters) [3054 3072])
+                            ("useCompression" variable (:type "boolean") (reparse-symbol formal_parameters) [3074 3096])
+                            ("dryRun" variable (:type "boolean") (reparse-symbol formal_parameters) [3098 3112]))                          
+                        :type "ConnectionParams")
+                        (reparse-symbol class_member_declaration) [3012 3590])
+                    ("batchFeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("stream" variable (:type "InputStream") (reparse-symbol formal_parameters) [3874 3892])
+                            ("batchId" variable (:type "String") (reparse-symbol formal_parameters) [3894 3908]))                          
+                        :type "ResultCallBack")
+                        (reparse-symbol class_member_declaration) [3842 4498]))                  
+                :type "class")
+                nil [459 4500]))          
+      :file "SampleFileFeeder.java"
+      :pointmax 4500
+      :fsize 4499
+      :lastmodtime '(22600 7454 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "SampleStreamFeeder.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.yahoo.example.feed" package nil nil [1 32])
+            ("com.yahoo.log.LogLevel" include nil nil [34 64])
+            ("com.yahoo.vespa.http.client.FeedClient" include nil nil [65 111])
+            ("com.yahoo.vespa.http.client.FeedClientFactory" include nil nil [112 165])
+            ("com.yahoo.vespa.http.client.SimpleLoggerResultCallback" include nil nil [166 228])
+            ("com.yahoo.vespa.http.client.config.Cluster" include nil nil [229 279])
+            ("com.yahoo.vespa.http.client.config.ConnectionParams" include nil nil [280 339])
+            ("com.yahoo.vespa.http.client.config.Endpoint" include nil nil [340 391])
+            ("com.yahoo.vespa.http.client.config.FeedParams" include nil nil [392 445])
+            ("com.yahoo.vespa.http.client.config.SessionParams" include nil nil [446 502])
+            ("java.util.concurrent.BlockingQueue" include nil nil [504 546])
+            ("java.util.concurrent.CountDownLatch" include nil nil [547 590])
+            ("java.util.concurrent.TimeUnit" include nil nil [591 628])
+            ("java.util.concurrent.atomic.AtomicBoolean" include nil nil [629 678])
+            ("java.util.concurrent.atomic.AtomicInteger" include nil nil [679 728])
+            ("java.util.logging.Logger" include nil nil [729 761])
+            ("SampleStreamFeeder" type
+               (:typemodifiers ("public")
+                :superclasses "Thread"
+                :members 
+                  ( ("Operation" type
+                       (:typemodifiers ("public" "static")
+                        :members 
+                          ( ("documentId" variable
+                               (:typemodifiers ("final" "public")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1085 1116])
+                            ("data" variable
+                               (:typemodifiers ("final" "public")
+                                :type "CharSequence")
+                                (reparse-symbol class_member_declaration) [1125 1156])
+                            ("Operation" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("id" variable (:type "String") (reparse-symbol formal_parameters) [1183 1192])
+                                    ("data" variable (:type "CharSequence") (reparse-symbol formal_parameters) [1194 1211]))                                  )
+                                (reparse-symbol class_member_declaration) [1166 1288]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [1045 1294])
+                    ("feedClient" variable
+                       (:typemodifiers ("private")
+                        :type "FeedClient")
+                        (reparse-symbol class_member_declaration) [1349 1379])
+                    ("pending" variable
+                       (:typemodifiers ("private")
+                        :type "AtomicInteger")
+                        (reparse-symbol class_member_declaration) [1384 1437])
+                    ("log" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1442 1538])
+                    ("drain" variable
+                       (:typemodifiers ("private")
+                        :type "AtomicBoolean")
+                        (reparse-symbol class_member_declaration) [1543 1599])
+                    ("finishedDraining" variable
+                       (:typemodifiers ("private" "final")
+                        :type "CountDownLatch")
+                        (reparse-symbol class_member_declaration) [1604 1674])
+                    ("SampleStreamFeeder" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "operations") (reparse-symbol formal_parameters) [1935 1945])
+                            ("endPoint" variable (:type "Endpoint") (reparse-symbol formal_parameters) [1947 1964])
+                            ("dryRun" variable (:type "boolean") (reparse-symbol formal_parameters) [1966 1980]))                          )
+                        (reparse-symbol class_member_declaration) [1865 2623])
+                    ("close" function
+                       (:throws ("InterruptedException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2717 2948])
+                    ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2968 3691]))                  
+                :type "class")
+                nil [991 3693]))          
+      :file "SampleStreamFeeder.java"
+      :pointmax 3694
+      :fsize 3693
+      :lastmodtime '(22600 7454 0 0)
+      :unmatched-syntax '((GT 1933 . 1934) (IDENTIFIER 1891 . 1904) (LT 1904 . 1905) (SEMICOLON 1343 . 1344) (GT 1331 . 1332) (PRIVATE 1300 . 1307) (LT 1321 . 1322))))
+  :file "!Users!yonatang!pachyderm!vespa-example!basic-feeding-client!src!main!java!com!yahoo!example!feed!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

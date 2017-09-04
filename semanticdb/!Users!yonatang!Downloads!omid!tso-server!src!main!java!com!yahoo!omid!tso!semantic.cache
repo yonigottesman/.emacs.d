@@ -1,0 +1,336 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("Cache" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("set" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [214 222])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [224 234]))                          
+                        :type "long")
+                        (reparse-symbol interface_member_declaration) [189 236])
+                    ("setAndCheck" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [277 285])
+                            ("startTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [287 306])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [308 318]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [241 320])
+                    ("get" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [350 358]))                          
+                        :type "long")
+                        (reparse-symbol interface_member_declaration) [325 360]))                  
+                :type "interface")
+                nil [159 363]))          
+      :file "Cache.java"
+      :pointmax 363
+      :fsize 362
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("LongCache" type
+               (:typemodifiers ("public")
+                :interfaces ("Cache")
+                :members 
+                  ( ("cache" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [77 105])
+                    ("size" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [110 133])
+                    ("associativity" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [138 170])
+                    ("LongCache" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol formal_parameters) [197 205])
+                            ("associativity" variable (:type "int") (reparse-symbol formal_parameters) [207 224]))                          )
+                        (reparse-symbol class_member_declaration) [180 360])
+                    ("set" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [482 490])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [492 502]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [466 1144])
+                    ("setIfLargest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [1175 1183])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [1185 1195]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1150 1950])
+                    ("get" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [2062 2070]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2046 2342])
+                    ("index" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("hash" variable (:type "long") (reparse-symbol formal_parameters) [2366 2375]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2348 2430]))                  
+                :type "class")
+                nil [30 2433]))          
+      :file "LongCache.java"
+      :pointmax 2434
+      :fsize 2433
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("java.io.IOException" include nil nil [30 57])
+            ("java.util.Collection" include nil nil [58 86])
+            ("java.util.Iterator" include nil nil [87 113])
+            ("java.util.concurrent.ExecutorService" include nil nil [114 158])
+            ("java.util.concurrent.Executors" include nil nil [159 197])
+            ("javax.inject.Inject" include nil nil [199 226])
+            ("org.jboss.netty.channel.Channel" include nil nil [228 267])
+            ("org.slf4j.Logger" include nil nil [268 292])
+            ("org.slf4j.LoggerFactory" include nil nil [293 324])
+            ("com.google.common.util.concurrent.ThreadFactoryBuilder" include nil nil [326 388])
+            ("com.lmax.disruptor.BatchEventProcessor" include nil nil [389 435])
+            ("com.lmax.disruptor.BusySpinWaitStrategy" include nil nil [436 483])
+            ("com.lmax.disruptor.EventFactory" include nil nil [484 523])
+            ("com.lmax.disruptor.EventHandler" include nil nil [524 563])
+            ("com.lmax.disruptor.RingBuffer" include nil nil [564 601])
+            ("com.lmax.disruptor.SequenceBarrier" include nil nil [602 644])
+            ("com.lmax.disruptor.WorkHandler" include nil nil [645 683])
+            ("com.lmax.disruptor.WorkerPool" include nil nil [684 721])
+            ("com.lmax.disruptor.YieldingWaitStrategy" include nil nil [722 769])
+            ("com.yahoo.omid.metrics.MetricsRegistry" include nil nil [770 816])
+            ("com.yahoo.omid.tso.CommitRingBuffer.Status" include nil nil [817 867]))          
+      :file "RequestProcessorImpl.java"
+      :pointmax 10420
+      :fsize 10419
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 1056 . 10418) (IDENTIFIER 967 . 983) (COMMA 965 . 966) (GT 964 . 965) (IDENTIFIER 952 . 964) (DOT 951 . 952) (IDENTIFIER 931 . 951) (PUBLIC 869 . 875) (LT 930 . 931)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("java.io.IOException" include nil nil [30 57])
+            ("java.util.Iterator" include nil nil [58 84])
+            ("java.util.concurrent.atomic.AtomicLong" include nil nil [85 131])
+            ("com.yahoo.omid.tso.CommitRingBuffer.CommitEntry" include nil nil [133 188])
+            ("com.yahoo.omid.tso.CommitRingBuffer.Status" include nil nil [189 239])
+            ("com.yahoo.omid.tso.RingEntry.Type" include nil nil [240 281])
+            ("org.apache.commons.lang.mutable.MutableInt" include nil nil [283 333])
+            ("org.jboss.netty.channel.Channel" include nil nil [334 373])
+            ("ConflictAnalyzer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("hashmap" variable
+                       (:typemodifiers ("private" "final")
+                        :type "CommitHashMap")
+                        (reparse-symbol class_member_declaration) [411 447])
+                    ("timestamp" variable
+                       (:typemodifiers ("static")
+                        :type "AtomicLong")
+                        (reparse-symbol class_member_declaration) [452 501])
+                    ("ConflictAnalyzer" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [511 597])
+                    ("EntryAndTail" type
+                       (:typemodifiers ("public")
+                        :members 
+                          ( ("entry" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [639 656])
+                            ("tail" variable
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [665 681])
+                            ("EntryAndTail" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("entry" variable (:type "int") (reparse-symbol formal_parameters) [711 720])
+                                    ("tail" variable (:type "int") (reparse-symbol formal_parameters) [722 730]))                                  )
+                                (reparse-symbol class_member_declaration) [691 805]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [603 811])
+                    ("findConflictInHashTable" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [859 866])
+                            ("" variable (:type "writeSet") (reparse-symbol formal_parameters) [883 891]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [820 1156])
+                    ("updateHashTable" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("commitId" variable (:type "long") (reparse-symbol formal_parameters) [1192 1205])
+                            ("" variable (:type "writeSet") (reparse-symbol formal_parameters) [1222 1230]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1162 1339])
+                    ("tryCommit" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("startTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [1370 1389])
+                            ("" variable (:type "writeSet") (reparse-symbol formal_parameters) [1406 1414]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1345 1671])
+                    ("commit" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "long") (reparse-symbol formal_parameters) [1698 1705])
+                            ("" variable (:type "writeSet") (reparse-symbol formal_parameters) [1722 1730])
+                            ("c" variable (:type "Channel") (reparse-symbol formal_parameters) [1732 1741])
+                            ("isRetry" variable (:type "boolean") (reparse-symbol formal_parameters) [1743 1758]))                          
+                        :type "Status")
+                        (reparse-symbol class_member_declaration) [1677 2245])
+                    ("begin" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "Channel") (reparse-symbol formal_parameters) [2269 2278]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [2251 2495]))                  
+                :type "class")
+                nil [375 2497]))          
+      :file "ConflictAnalyzer.java"
+      :pointmax 2498
+      :fsize 2497
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax '((GT 1720 . 1721) (IDENTIFIER 1707 . 1715) (LT 1715 . 1716) (GT 1404 . 1405) (IDENTIFIER 1391 . 1399) (LT 1399 . 1400) (GT 1220 . 1221) (IDENTIFIER 1207 . 1215) (LT 1215 . 1216) (GT 881 . 882) (IDENTIFIER 868 . 876) (LT 876 . 877)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("CommitHashMap" type
+               (:members 
+                  ( ("cellIdToCommitMap" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Cache")
+                        (reparse-symbol class_member_declaration) [786 824])
+                    ("CommitHashMap" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("largestDeletedTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [936 964]))                          )
+                        (reparse-symbol class_member_declaration) [915 1018])
+                    ("CommitHashMap" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol formal_parameters) [1295 1303])
+                            ("largestDeletedTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [1305 1333]))                          )
+                        (reparse-symbol class_member_declaration) [1274 1514])
+                    ("getLatestWriteForCell" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hash" variable (:type "long") (reparse-symbol formal_parameters) [1554 1563]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1520 1616])
+                    ("putLatestWriteForCell" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hash" variable (:type "long") (reparse-symbol formal_parameters) [1656 1665])
+                            ("commitTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [1667 1687]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1622 1757])
+                    ("putIfLatest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("hash" variable (:type "long") (reparse-symbol formal_parameters) [1794 1803])
+                            ("startTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [1805 1824])
+                            ("commitTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [1826 1846]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1767 1940]))                  
+                :type "class")
+                nil [759 1952]))          
+      :file "CommitHashMap.java"
+      :pointmax 1953
+      :fsize 1952
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.yahoo.omid.tso" package nil nil [1 28])
+            ("java.util.concurrent.atomic.AtomicLong" include nil nil [30 76])
+            ("SimpleLongCache" type
+               (:typemodifiers ("public")
+                :interfaces ("Cache")
+                :members 
+                  ( ("cache" variable
+                       (:dereference 1
+                        :typemodifiers ("private" "final")
+                        :type "AtomicLong")
+                        (reparse-symbol class_member_declaration) [131 165])
+                    ("size" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [170 193])
+                    ("SimpleLongCache" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol formal_parameters) [226 234])
+                            ("associativity" variable (:type "int") (reparse-symbol formal_parameters) [236 253]))                          )
+                        (reparse-symbol class_member_declaration) [203 458])
+                    ("set" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [580 588])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [590 600]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [564 824])
+                    ("setAndCheck" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [857 865])
+                            ("startTimestamp" variable (:type "long") (reparse-symbol formal_parameters) [867 886])
+                            ("value" variable (:type "long") (reparse-symbol formal_parameters) [888 898]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [830 1442])
+                    ("get" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("key" variable (:type "long") (reparse-symbol formal_parameters) [1558 1566]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [1542 1648])
+                    ("index" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("hash" variable (:type "long") (reparse-symbol formal_parameters) [1672 1681]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1654 1736]))                  
+                :type "class")
+                nil [78 1739]))          
+      :file "SimpleLongCache.java"
+      :pointmax 1740
+      :fsize 1739
+      :lastmodtime '(22163 48995 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!yonatang!Downloads!omid!tso-server!src!main!java!com!yahoo!omid!tso!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

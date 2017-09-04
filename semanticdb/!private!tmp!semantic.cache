@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("total" variable nil nil [13 22])
+            ("for" code nil nil [24 101])
+            ("print" code nil nil [102 113]))          
+      :file "countItems.py"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(22810 44167 0 0)
+      :unmatched-syntax '((IF 51 . 53) (NEWLINE 56 . 57) (IF 51 . 53) (NEWLINE 56 . 57) (IF 51 . 53) (NEWLINE 56 . 57)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Flight Eticket" section nil nil [183 3665])
+            (".wrapper{min-width:300px !important;}body{margin:0}td,th{padding:0}table{border-collapse:collapse;border-spacing:0;font-family:arial;margin:0 auto;font-size:11px}.grey{color:#9b9b9b}strong{color:#4a4a4a}p{margin:5px 0 0}.text-right{text-align:right}.text-center{text-align:center}.text-left{text-align:left}.light-grey{color:#9b9b9b}.vM{vertical-align:middle}.only-mobile{display:none}.width50{width:50%}.flL{float:left}.flR{float:right}.clearfix{display:table}.width100{width:100%}.width20{width:18%}.width35{width:35%}.width37{width:37%}.width30{width:29%}.width40{width:40%}.center{text-align:center}.append_bottom15{margin-bottom:15px}.append_bottom10{margin-bottom:10px}.append_bottom5{margin-bottom:5px}.prepend_top10{margin-top:10px}.prepend_top9{margin-top:9px}@media (min-width:601px){.passenger-info{width:58%!important}.eticket-info{width:42%!important}.date-change-table,.support-table{width:49%!important}.manage-btn{width:25% !important;}.baggage-info{width:100%!important}.booking-id{text-align:right!important}.logo-section{width:65%!important}.id-section{width:35%!important}.rounded-border{border:1px solid #c9c9c9}.remove-border{border:none!important;padding:0!important}}@media (max-width:600px){.mailer-btn{width:100% !important;}.btn-gap{width:0% !important;}.city-code,.terminal-info,.ticket-status{font-weight:700}p,pre{margin:3px 0 0;line-height:12px}.wrapper{width:100%!important;border:none!important;padding-top:15px}.inner-wrapper{padding:0!important}.imp-info{background:#f9f7f7;width:100%;margin-bottom:10px}.journey-info-mobile{padding:0 10px}.section-heading{background:#f6faff;padding:10px;margin-bottom:10px;font-weight:700;font-size:11px;color:#153d6c}.airline-name,.city{margin-bottom:5px}.mob-hide,.only-desktop{display:none}.only-mobile{display:block!important;width:100%!important;height:100%!important;color:#4a4a4a}.add-ons span,.info-icon,.info-text,.support-table span,.ticket-status{display:inline-block}.time-info{font-size:12px;line-height:14px;padding:5px 0;border-top:1px solid #9b9b9b;border-bottom:1px solid #9b9b9b;margin-top:0}.airline-logo{margin-right:3%}.city{margin-top:2px;font-size:11px;line-height:13px}.arrow-icon{width:32px;height:9px}.dept-time{font-size:16px}.city-code{color:#153d6c;font-size:24px;line-height:26px}.terminal-info{font-size:12px;margin-top:7px;}.add-ons{padding-top:9px;margin:10px 0;color:#153d6c}.add-ons span{padding-right:3px;border-right:#153d6c 1px solid;margin-bottom:9px;margin-right:2px}.lower-section-wrapper,.passenger-wrapper{border:none!important}.info-text{width:86%;padding:8px 5px 6px;font-size:9px;line-height:11px;margin:0}.eticket-info,.id-section,.logo-section,.manage-btn,.passenger-info{width:100%!important}.info-icon{padding:6px 0 6px 8px;margin-right:2px}.seat-no,.ticket-no{padding-top:7px}.date-change-table,.support-table{width:100%!important;margin-bottom:10px}.support-table span{margin-right:5%}.manage-btn{margin-right:0!important;margin-bottom:10px!important}.booking-id{text-align:left!important}.pnr,.seat-no{text-align:right;padding-right:5px}.ticket-no{padding-left:5%!important;height:20px!important}.last-inclusion{border-right:none!important;margin-right:0}.app-store-btn{width:50%!important}.seat-text{display:inline-block!important}.rounded-border{border:1px solid #9b9b9b}.remove-border{border:none!important;padding:0!important}.mobile-layover{display:block;border-left:none!important;margin-top:4px;}}" section (:members 
+              ( ("&nbsp;" anchor nil nil [16529 16532])
+                ("&nbsp;" anchor nil nil [25593 25596])
+                ("Get Invoice" anchor nil nil [31141 31144])
+                ("http://support.makemytrip.com" anchor nil nil [31727 31730])
+                ("Android" anchor nil nil [31826 31829])
+                ("iOS" anchor nil nil [31922 31925])
+                ("MODIFY" anchor nil nil [32336 32339])
+                ("DOWNLOAD" anchor nil nil [32914 32917])
+                ("PLAY STORE" anchor nil nil [33588 33591])
+                ("APP STORE" anchor nil nil [34233 34236])
+                ("http://support.makemytrip.com" anchor nil nil [59249 59252])
+                ("http://makemytrip.custhelp.com" anchor nil nil [59690 59693]))              ) nil [3665 61480]))          
+      :file "bla.html"
+      :pointmax 61480
+      :fsize 61479
+      :lastmodtime '(22810 44191 0 0)
+      :unmatched-syntax nil))
+  :file "!private!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

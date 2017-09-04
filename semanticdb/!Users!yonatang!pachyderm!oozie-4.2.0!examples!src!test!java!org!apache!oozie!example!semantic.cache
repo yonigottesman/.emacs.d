@@ -1,0 +1,63 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "TestLocalOozieExample.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.oozie.example" package nil nil [810 843])
+            ("org.apache.hadoop.fs.Path" include nil nil [845 878])
+            ("org.apache.oozie.service.Services" include nil nil [879 920])
+            ("org.apache.oozie.test.XFsTestCase" include nil nil [921 962])
+            ("org.apache.oozie.util.IOUtils" include nil nil [963 1000])
+            ("org.apache.oozie.util.ParamChecker" include nil nil [1001 1043])
+            ("org.apache.oozie.util.XLog" include nil nil [1044 1078])
+            ("java.io.File" include nil nil [1080 1100])
+            ("java.io.FileOutputStream" include nil nil [1101 1133])
+            ("java.io.IOException" include nil nil [1134 1161])
+            ("TestLocalOozieExample" type
+               (:typemodifiers ("public")
+                :superclasses "XFsTestCase"
+                :members 
+                  ( ("oozieLocalLog" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1224 1253])
+                    ("setUp" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1273 1555])
+                    ("delete" function
+                       (:throws ("IOException")
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("file" variable (:type "File") (reparse-symbol formal_parameters) [1597 1606]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1575 2329])
+                    ("tearDown" function
+                       (:throws ("Exception")
+                        :typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2349 2687])
+                    ("testLocalOozieExampleEnd" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2693 3291])
+                    ("testLocalOozieExampleKill" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3297 3898]))                  
+                :type "class")
+                nil [1163 3901]))          
+      :file "TestLocalOozieExample.java"
+      :pointmax 3902
+      :fsize 3901
+      :lastmodtime '(21855 4694 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!yonatang!pachyderm!oozie-4.2.0!examples!src!test!java!org!apache!oozie!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

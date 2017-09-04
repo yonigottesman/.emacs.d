@@ -1,0 +1,31 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "stdbool.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__STDBOOL_H" variable (:constant-flag t) nil [1310 1321])
+            ("_Bool" variable (:constant-flag t) nil [1588 1593])
+            ("bool" variable (:constant-flag t) nil [1607 1611])
+            ("false" variable (:constant-flag t) nil [1626 1631])
+            ("true" variable (:constant-flag t) nil [1646 1650])
+            ("__bool_true_false_are_defined" variable (:constant-flag t) nil [1673 1702]))          
+      :file "stdbool.h"
+      :pointmax 1731
+      :fsize 1730
+      :lastmodtime '(22270 46947 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("false" . ((symbol "false" 1632 . 1637)))
+          ("bool" . ((BOOL "bool" 1613 . 1617)))
+          ("__STDBOOL_H")
+          ("__bool_true_false_are_defined" . ((number "1" 1703 . 1704)))
+          ("true" . ((symbol "true" 1652 . 1656)))
+          ("_Bool" . ((BOOL "bool" 1594 . 1598)))
+          )
+))
+  :file "!Library!Developer!CommandLineTools!usr!lib!clang!7.3.0!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
