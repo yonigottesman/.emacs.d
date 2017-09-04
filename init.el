@@ -8,65 +8,90 @@
 
 ;;-----------------------------------------------------------------------------------------
 ;;helm
-(require 'helm)
-(require 'helm-config)
+;; (require 'helm)
+;; (require 'helm-config)
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
 ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
 ;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
-(global-set-key (kbd "C-c h") 'helm-command-prefix)
-(global-unset-key (kbd "C-x c"))
-(helm-autoresize-mode t)
-(setq helm-autoresize-max-height 20)
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
-(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
-(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
+;; (global-set-key (kbd "C-c h") 'helm-command-prefix)
+;; (global-unset-key (kbd "C-x c"))
+;; (helm-autoresize-mode t)
+;; (setq helm-autoresize-max-height 20)
+;; (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+;; (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+;; (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
-(when (executable-find "curl")
-  (setq helm-google-suggest-use-curl-p t))
+;; (when (executable-find "curl")
+;;   (setq helm-google-suggest-use-curl-p t))
 
-(setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
-      helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
-      helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
-      helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
-      helm-ff-file-name-history-use-recentf t)
+;; (setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
+;;       helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
+;;       helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
+;;       helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
+;;       helm-ff-file-name-history-use-recentf t)
 
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "C-x b") 'helm-mini)
-(setq helm-buffers-fuzzy-matching t
-      helm-recentf-fuzzy-match    t)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
+;; (global-set-key (kbd "M-x") 'helm-M-x)
+;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+;; (global-set-key (kbd "C-x b") 'helm-mini)
+;; (setq helm-buffers-fuzzy-matching t
+;;       helm-recentf-fuzzy-match    t)
+;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;; (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
 
-(when (executable-find "ack-grep")
-  (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
-        helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
+;; (when (executable-find "ack-grep")
+;;   (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
+;;         helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
 
-(global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
-(add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+;; (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
+;; (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
 
 
 
-(require 'helm-swoop)
-;; Change the keybinds to whatever you like :)
-(global-set-key (kbd "C-c h o") 'helm-swoop)
-(global-set-key (kbd "C-c s") 'helm-multi-swoop-all)
-;; When doing isearch, hand the word over to helm-swoop
-(define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
-;; From helm-swoop to helm-multi-swoop-all
-(define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
-;; Save buffer when helm-multi-swoop-edit complete
-(setq helm-multi-swoop-edit-save t)
-;; If this value is t, split window inside the current window
-(setq helm-swoop-split-with-multiple-windows t)
-;; Split direcion. 'split-window-vertically or 'split-window-horizontally
-(setq helm-swoop-split-direction 'split-window-vertically)
-;; If nil, you can slightly boost invoke speed in exchange for text color
-(setq helm-swoop-speed-or-color t)
+;; (require 'helm-swoop)
+;; ;; Change the keybinds to whatever you like :)
+;; (global-set-key (kbd "C-c h o") 'helm-swoop)
+;; (global-set-key (kbd "C-c s") 'helm-multi-swoop-all)
+;; ;; When doing isearch, hand the word over to helm-swoop
+;; (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
+;; ;; From helm-swoop to helm-multi-swoop-all
+;; (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
+;; ;; Save buffer when helm-multi-swoop-edit complete
+;; (setq helm-multi-swoop-edit-save t)
+;; ;; If this value is t, split window inside the current window
+;; (setq helm-swoop-split-with-multiple-windows t)
+;; ;; Split direcion. 'split-window-vertically or 'split-window-horizontally
+;; (setq helm-swoop-split-direction 'split-window-vertically)
+;; ;; If nil, you can slightly boost invoke speed in exchange for text color
+;; (setq helm-swoop-speed-or-color t)
 
-(helm-mode 1)
+;; (helm-mode 1)
 ;;-----------------------------------------------------------------------------------------
+
+
+;;ido
+(require 'ido)
+(ido-mode t)
+
+;;smex
+(require 'smex)
+(smex-initialize) 
+(global-set-key [(meta x)] (lambda ()
+                             (interactive)
+                             (or (boundp 'smex-cache)
+                                 (smex-initialize))
+                             (global-set-key [(meta x)] 'smex)
+                             (smex)))
+
+(global-set-key [(shift meta x)] (lambda ()
+                                   (interactive)
+                                   (or (boundp 'smex-cache)
+                                       (smex-initialize))
+                                   (global-set-key [(shift meta x)] 'smex-major-mode-commands)
+                                   (smex-major-mode-commands)))
+;;-----------------------------------------------------------------------------------------
+
+
 ;;CEDET
 
 (require 'cc-mode)
@@ -79,7 +104,6 @@
 (global-semantic-stickyfunc-mode 1)
 (global-semantic-idle-summary-mode 1)
 (global-semantic-idle-local-symbol-highlight-mode 1)
-
 (semantic-add-system-include "/usr/include/boost")
 
 (defun my-cedet-hook ()
@@ -96,7 +120,9 @@
 ;;company mode
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-;; TODO (add-to-list 'company-backends 'company-c-headers)
+(setq company-backends (delete 'company-semantic company-backends))
+(add-to-list 'company-backends 'company-c-headers)
+(setq company-minimum-prefix-length 2)
 (global-set-key [(C tab)]  'company-complete)
 ;; (with-eval-after-load 'company 
 ;;   (define-key company-active-map (kbd "M-n") nil)
@@ -167,6 +193,10 @@
 
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
+
+(global-set-key (kbd "ESC <up>") 'backward-paragraph)
+(global-set-key (kbd "ESC <down>") 'forward-paragraph)
+
 (global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
 (setq-default indent-tabs-mode nil) ;; use space to indent by default
 (setq-default tab-width 4)
@@ -181,7 +211,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(custom-safe-themes
+   (quote
+    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" default)))
+ '(ecb-options-version "2.50")
+ '(package-selected-packages
+   (quote
+    (zenburn-theme yasnippet smex nyan-mode ecb company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -203,3 +239,33 @@
 (setq jedi:setup-keys t)
 (setq jedi:complete-on-dot t)
 ;;-----------------------------------------------------------------------------------------
+
+;;prjects
+(require 'package)
+(global-ede-mode t)
+(ede-cpp-root-project "ycdb" :file "/home/yonatang/ycdb/Makefile"
+                      :include-path '("/include"))
+
+
+;;ECB
+(require 'ecb)
+(setq ecb-layout-name "left9")
+
+
+;;gdb
+(setq
+ ;; use gdb-many-windows by default
+ gdb-many-windows t
+
+ ;; Non-nil means display source file containing the main routine at startup
+ gdb-show-main t
+ )
+
+ (global-hl-line-mode 1)
+(set-face-background 'hl-line "color-243")
+;; (set-face-foreground 'highlight nil)
+;; (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
+;; ;;zeburn
+; Set cursor color to white
+(load-theme 'zenburn)
+(set-cursor-color "#ffffff") 
