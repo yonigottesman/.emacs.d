@@ -6,70 +6,6 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-
-
-;;helm
-;; (require 'helm)
-;; (require 'helm-config)
-
-;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
-;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
-;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
-;; (global-set-key (kbd "C-c h") 'helm-command-prefix)
-;; (global-unset-key (kbd "C-x c"))
-;; (helm-autoresize-mode t)
-;; (setq helm-autoresize-max-height 20)
-;; (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
-;; (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
-;; (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
-
-;; (when (executable-find "curl")
-;;   (setq helm-google-suggest-use-curl-p t))
-
-;; (setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
-;;       helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
-;;       helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
-;;       helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
-;;       helm-ff-file-name-history-use-recentf t)
-
-;; (global-set-key (kbd "M-x") 'helm-M-x)
-;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-;; (global-set-key (kbd "C-x b") 'helm-mini)
-;; (setq helm-buffers-fuzzy-matching t
-;;       helm-recentf-fuzzy-match    t)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;; (setq helm-M-x-fuzzy-match t) ;; optional fuzzy matching for helm-M-x
-
-;; (when (executable-find "ack-grep")
-;;   (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
-;;         helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
-
-;; (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
-;; (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
-
-
-
-;; (require 'helm-swoop)
-;; ;; Change the keybinds to whatever you like :)
-;; (global-set-key (kbd "C-c h o") 'helm-swoop)
-;; (global-set-key (kbd "C-c s") 'helm-multi-swoop-all)
-;; ;; When doing isearch, hand the word over to helm-swoop
-;; (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
-;; ;; From helm-swoop to helm-multi-swoop-all
-;; (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
-;; ;; Save buffer when helm-multi-swoop-edit complete
-;; (setq helm-multi-swoop-edit-save t)
-;; ;; If this value is t, split window inside the current window
-;; (setq helm-swoop-split-with-multiple-windows t)
-;; ;; Split direcion. 'split-window-vertically or 'split-window-horizontally
-;; (setq helm-swoop-split-direction 'split-window-vertically)
-;; ;; If nil, you can slightly boost invoke speed in exchange for text color
-;; (setq helm-swoop-speed-or-color t)
-
-;; (helm-mode 1)
-;;-----------------------------------------------------------------------------------------
-
-
 ;;ido
 (require 'ido)
 (ido-mode t)
@@ -164,6 +100,12 @@
       (set-face-foreground 'highlight nil)
       (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
       )
+  (load-theme 'zenburn t)
+  (global-hl-line-mode 1)
+  (set-face-background 'hl-line "#3e4446")
+  (set-face-foreground 'highlight nil)
+  (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
+  
   ;; else
   )
 
@@ -221,26 +163,26 @@
           (lambda () (visual-line-mode 1)))
 
 ;;-----------------------------------------------------------------------------------------
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" default)))
- '(ecb-options-version "2.50")
- '(package-selected-packages
-   (quote
-    (zenburn-theme yasnippet smex nyan-mode ecb company))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-scrollbar-bg ((t (:background "white smoke"))))
- '(company-scrollbar-fg ((t (:background "dim gray"))))
- '(company-tooltip ((t (:background "dark gray" :foreground "black")))))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" default)))
+;;  '(ecb-options-version "2.50")
+;;  '(package-selected-packages
+;;    (quote
+;;     (sr-speedbar zenburn-theme yasnippet smex nyan-mode ecb company))))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(company-scrollbar-bg ((t (:background "white smoke"))))
+;;  '(company-scrollbar-fg ((t (:background "dim gray"))))
+;;  '(company-tooltip ((t (:background "dark gray" :foreground "black")))))
 
 ;;-----------------------------------------------------------------------------------------
 ;;eclim
@@ -259,10 +201,17 @@
 ;;-----------------------------------------------------------------------------------------
 ;;prjects
 
-;; (require 'package)
-;; (global-ede-mode t)
-;; (ede-cpp-root-project "ycdb" :file "/home/yonatang/ycdb/Makefile"
-;;                       :include-path '("/include"))
+(require 'package)
+(global-ede-mode t)
+
+
+
+(ede-cpp-root-project "ycdb" :file "/Users/yonatang/gemini_search/ycdb/Makefile"
+                      :include-path '("/include"))
+
+
+(ede-cpp-root-project "datastore" :file "/Users/yonatang/gemini_search/datastores/Makefile"
+                      :include-path '("/common/api"))
 
 
 ;;ECB
@@ -294,3 +243,45 @@
 (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time
 
+
+(setq ring-bell-function 'ignore)
+
+
+(require 'sr-speedbar)
+(setq sr-speedbar-width 40)
+
+
+;;copy paste from clipboard
+(setq x-select-enable-clipboard t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+
+;;web
+(require 'multi-web-mode)
+(setq mweb-default-major-mode 'html-mode)
+(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+                  (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+(multi-web-global-mode 1)
+
+
+;;line length limit
+(require 'whitespace)
+(setq whitespace-line-column 80) ;; limit line length
+(setq whitespace-style '(face lines-tail))
+
+(add-hook 'prog-mode-hook 'whitespace-mode)
