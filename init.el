@@ -121,7 +121,7 @@
                                (interactive)
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
-
+;; refresh all changed buffers on disk
 (defun revert-all-buffers ()
   "Refreshes all open buffers from their respective files"
   (interactive)
@@ -135,26 +135,9 @@
 	  (setq list (cdr list))
 	  (setq buffer (car list))))
   (message "Refreshed open files"))
-
-(global-set-key (kbd "M-p") 'backward-paragraph)
-(global-set-key (kbd "M-n") 'forward-paragraph)
+;;-----------
 
 
-;;for terminal mode
-(global-set-key (kbd "ESC <up>") 'backward-paragraph)
-(global-set-key (kbd "ESC <down>") 'forward-paragraph)
-
-(global-set-key [M-up] 'backward-paragraph)
-(global-set-key [M-down] 'forward-paragraph)
-
-(global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
-(setq-default indent-tabs-mode nil) ;; use space to indent by default
-(setq-default tab-width 4)
-
-
-(global-set-key [(C-f5)] 'compile)
-(global-set-key [(f5)] 'recompile)
-;;-----------------------------------------------------------------------------------------
 ;;latex
 
 (add-hook 'latex-mode-hook 'flyspell-mode)
@@ -191,10 +174,17 @@
 ;; (require 'eclimd)
 ;;-----------------------------------------------------------------------------------------
 ;;python
-(autoload 'jedi:setup "jedi" nil t)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:setup-keys t)
-(setq jedi:complete-on-dot t)
+(elpy-enable)
+(define-key elpy-mode-map (kbd "<M-left>") nil)
+(define-key elpy-mode-map (kbd "<M-right>") nil)
+(define-key elpy-mode-map (kbd "<M-up>") nil)
+(define-key elpy-mode-map (kbd "<M-down>") nil)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
+;; (autoload 'jedi:setup "jedi" nil t)
+;; (add-hook 'python-mode-hook 'jedi:setup)
+;; (setq jedi:setup-keys t)
+;; (setq jedi:complete-on-dot t)
 ;;-----------------------------------------------------------------------------------------
 
 
@@ -260,7 +250,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company))))
+    (elpy zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -285,3 +275,24 @@
 (setq whitespace-style '(face lines-tail))
 
 (add-hook 'prog-mode-hook 'whitespace-mode)
+
+;; Some key bindings
+(global-set-key (kbd "M-p") 'backward-paragraph)
+(global-set-key (kbd "M-n") 'forward-paragraph)
+
+
+;;for terminal mode
+(global-set-key (kbd "ESC <up>") 'backward-paragraph)
+(global-set-key (kbd "ESC <down>") 'forward-paragraph)
+
+(global-set-key [M-up] 'backward-paragraph)
+(global-set-key [M-down] 'forward-paragraph)
+
+(global-set-key (kbd "RET") 'newline-and-indent)  ; automatically indent when press RET
+(setq-default indent-tabs-mode nil) ;; use space to indent by default
+(setq-default tab-width 4)
+
+
+(global-set-key [(C-f5)] 'compile)
+(global-set-key [(f5)] 'recompile)
+;;-----------------------------------------------------------------------------------------
