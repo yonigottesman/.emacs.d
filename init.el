@@ -195,15 +195,6 @@
 (global-ede-mode t)
 
 
-
-(ede-cpp-root-project "ycdb" :file "/Users/yonatang/gemini_search/ycdb/Makefile"
-                      :include-path '("/include"))
-
-
-(ede-cpp-root-project "datastore" :file "/Users/yonatang/gemini_search/datastores/Makefile"
-                      :include-path '("/common/api"))
-
-
 ;;ECB
 ;; (require 'ecb)
 ;; (setq ecb-layout-name "left9")
@@ -237,8 +228,8 @@
 (setq ring-bell-function 'ignore)
 
 
-(require 'sr-speedbar)
-(setq sr-speedbar-width 40)
+;; (require 'sr-speedbar)
+;; (setq sr-speedbar-width 40)
 
 
 ;;copy paste from clipboard
@@ -249,8 +240,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (elpy zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company))))
+   '(csv-mode elpy zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -296,3 +286,24 @@
 (global-set-key [(C-f5)] 'compile)
 (global-set-key [(f5)] 'recompile)
 ;;-----------------------------------------------------------------------------------------
+
+
+(defun pbcopy ()
+  (interactive)
+  (call-process-region (point) (mark) "pbcopy")
+  (setq deactivate-mark t))
+
+(defun pbpaste ()
+  (interactive)
+  (call-process-region (point) (if mark-active (mark) (point)) "pbpaste" t t))
+
+(defun pbcut ()
+  (interactive)
+  (pbcopy)
+  (delete-region (region-beginning) (region-end)))
+
+(global-set-key (kbd "C-c c") 'pbcopy)
+(global-set-key (kbd "C-c v") 'pbpaste)
+(global-set-key (kbd "C-c x") 'pbcut)
+
+
