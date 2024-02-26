@@ -30,46 +30,46 @@
 
 
 
-;;CEDET
+;; ;;CEDET
 
-(require 'cc-mode)
-(require 'semantic)
+;; (require 'cc-mode)
+;; (require 'semantic)
 
-(global-semanticdb-minor-mode 1)
-(global-semantic-idle-scheduler-mode 1)
-(global-semantic-decoration-mode 1)
-(global-semantic-highlight-func-mode 1)
-(global-semantic-stickyfunc-mode 1)
-(global-semantic-idle-summary-mode 1)
-(global-semantic-idle-local-symbol-highlight-mode 1)
-(semantic-add-system-include "/usr/include/boost")
+;; (global-semanticdb-minor-mode 1)
+;; (global-semantic-idle-scheduler-mode 1)
+;; (global-semantic-decoration-mode 1)
+;; (global-semantic-highlight-func-mode 1)
+;; (global-semantic-stickyfunc-mode 1)
+;; (global-semantic-idle-summary-mode 1)
+;; (global-semantic-idle-local-symbol-highlight-mode 1)
+;; (semantic-add-system-include "/usr/include/boost")
 
-(defun my-cedet-hook ()
-  (local-set-key [(control return)] 'semantic-ia-complete-symbol)
-  (local-set-key "\C-c>" 'semantic-complete-analyze-inline)
-  (local-set-key "\C-cj" 'semantic-ia-fast-jump)
-  (local-set-key "\C-cq" 'semantic-ia-show-doc)
-  (local-set-key "\C-cs" 'semantic-ia-show-summary)
-  (local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle)
-  )
-(add-hook 'c-mode-common-hook 'my-cedet-hook)
-(semantic-mode 1)
-;;-----------------------------------------------------------------------------------------
-;;company mode
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(setq company-backends (delete 'company-semantic company-backends))
-(add-to-list 'company-backends 'company-c-headers)
-(setq company-minimum-prefix-length 2)
-(global-set-key [(C tab)]  'company-complete)
-(with-eval-after-load 'company 
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous))
-;;-----------------------------------------------------------------------------------------
+;; (defun my-cedet-hook ()
+;;   (local-set-key [(control return)] 'semantic-ia-complete-symbol)
+;;   (local-set-key "\C-c>" 'semantic-complete-analyze-inline)
+;;   (local-set-key "\C-cj" 'semantic-ia-fast-jump)
+;;   (local-set-key "\C-cq" 'semantic-ia-show-doc)
+;;   (local-set-key "\C-cs" 'semantic-ia-show-summary)
+;;   (local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle)
+;;   )
+;; (add-hook 'c-mode-common-hook 'my-cedet-hook)
+;; (semantic-mode 1)
+;; ;;-----------------------------------------------------------------------------------------
+;; ;;company mode
+;; (require 'company)
+;; (add-hook 'after-init-hook 'global-company-mode)
+;; (setq company-backends (delete 'company-semantic company-backends))
+;; (add-to-list 'company-backends 'company-c-headers)
+;; (setq company-minimum-prefix-length 2)
+;; (global-set-key [(C tab)]  'company-complete)
+;; (with-eval-after-load 'company 
+;;   (define-key company-active-map (kbd "M-n") nil)
+;;   (define-key company-active-map (kbd "M-p") nil)
+;;   (define-key company-active-map (kbd "C-n") #'company-select-next)
+;;   (define-key company-active-map (kbd "C-p") #'company-select-previous))
+;; ;;-----------------------------------------------------------------------------------------
 ;;stuff
-(nyan-mode 1)
+;; (nyan-mode 1)
 (global-linum-mode t) ;;line numbers
 (column-number-mode t) ; Shows the column number in the buffer's mode line
 (setq c-default-style "linux" c-basic-offset 4)
@@ -100,7 +100,7 @@
       (set-face-foreground 'highlight nil)
       (set-face-attribute 'region nil :background "#ff9200" :foreground "#ffffff")
       )
-  (load-theme 'zenburn t)
+  ;; (load-theme 'zenburn t)
   (global-hl-line-mode 1)
   (set-face-background 'hl-line "#3e4446")
   (set-face-foreground 'highlight nil)
@@ -114,13 +114,13 @@
 ;; (setq visible-bell t )
 (put 'dired-find-alternate-file 'disabled nil)
 ;; Enable yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
+;; (require 'yasnippet)
+;; (yas-global-mode 1)
 
-(global-set-key (kbd "<f5>") (lambda ()
-                               (interactive)
-                               (setq-local compilation-read-command nil)
-                               (call-interactively 'compile)))
+;; (global-set-key (kbd "<f5>") (lambda ()
+;;                                (interactive)
+;;                                (setq-local compilation-read-command nil)
+;;                                (call-interactively 'compile)))
 ;; refresh all changed buffers on disk
 (defun revert-all-buffers ()
   "Refreshes all open buffers from their respective files"
@@ -239,8 +239,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("1436985fac77baf06193993d88fa7d6b358ad7d600c1e52d12e64a2f07f07176" default))
  '(package-selected-packages
-   '(csv-mode elpy zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company)))
+   '(markdown-mode dracula-theme csv-mode elpy zenburn-theme ## multi-web-mode yasnippet sr-speedbar smex nyan-mode jedi helm-swoop company)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -250,13 +252,13 @@
 
 
 ;;web
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
-                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-(multi-web-global-mode 1)
+;; (require 'multi-web-mode)
+;; (setq mweb-default-major-mode 'html-mode)
+;; (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+;;                   (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
+;;                   (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
+;; (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
+;; (multi-web-global-mode 1)
 
 
 ;;line length limit
@@ -306,4 +308,4 @@
 (global-set-key (kbd "C-c v") 'pbpaste)
 (global-set-key (kbd "C-c x") 'pbcut)
 
-
+(load-theme 'dracula t)
